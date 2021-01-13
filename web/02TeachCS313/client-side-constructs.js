@@ -3,5 +3,5 @@ function clicked(){
 }
 
 function changeColor(){
-    document.getElementById("div1").style.backgroundColor = document.getElementsByName("colorName").values;
+    document.getElementById("div1").style.backgroundColor = document.getElementsById("colorName").value;
 }
