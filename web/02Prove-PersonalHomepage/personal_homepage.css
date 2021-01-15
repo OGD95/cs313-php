@@ -1,5 +1,13 @@
 .header{
     padding: 20px;
     text-align: left;
-    background: black;
+    background: aqua;
+    text-indent: 25px;
+}
+
+.homepage_menu{
+    padding: 15px;
+    text-align: left;
+    background: aqua;
+    text-indent: 25px;
 }
