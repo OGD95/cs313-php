@@ -11,10 +11,26 @@
     background: aqua;
     text-indent: 25px;
     font-size: large;
+}
+
+#localLink:link{
+    color: black;
+    text-decoration: none;
+}
+
+#localLink:active{
+    font-weight: bold;
+    color: black;
     text-decoration: none;
 }
 
 #localLink:hover{
     font-weight: bold;
     color: black;
+    text-decoration: none;
+}
+
+#localLink:visited{
+    color: black;
+    text-decoration: none;
 }
