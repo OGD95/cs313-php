@@ -37,8 +37,11 @@
 }
 
 .weddingPhoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
+    size: 50%;
 }
