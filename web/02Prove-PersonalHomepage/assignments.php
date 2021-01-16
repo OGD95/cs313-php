@@ -14,6 +14,8 @@
 
     <?php require 'header.php'; ?>
 
+    <button onclick="changePageName()"> click to change pafe title</button>
+
 </body>
 
 </html>
