@@ -15,14 +15,14 @@
     <?php require "header.php" ?>
 
     <div class="image_description">
-        <img onmouseover="zoom()" onmouseout="zoomOut()" class="weddingPhoto" src="wedding photo.jpg" alt="Wedding Photo">
+        <img onmouseover="zoom(this)" onmouseout="zoomOut(this)" class="weddingPhoto" src="wedding photo.jpg" alt="Wedding Photo">
         <div class="text">
             <p>Wedding photo with myself, my wife, and my wifes grandmother: Taken 12/21/2019</p>
         </div>
     </div>
 
     <div class="image_description">
-        <img onmouseover="zoom()" onmouseout="zoomOut()" id="weddingPhoto" class="weddingPhoto" src="topps-logo.png" alt="Topps' Logo">
+        <img onmouseover="zoom(this)" onmouseout="zoomOut(this)" class="weddingPhoto" src="topps-logo.png" alt="Topps' Logo">
         <div class="text">
             <p>One of my passions is collecting baseball cards. Topps is the main seller of
                 licensed baseball cards in the United States</p>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="image_description">
-        <img onmouseover="zoom()" onmouseout="zoomOut()" class="weddingPhoto" src="panini-logo-small.jpg" alt="Panini America's Logo">
+        <img onmouseover="zoom(this)" onmouseout="zoomOut(this)" class="weddingPhoto" src="panini-logo-small.jpg" alt="Panini America's Logo">
         <div class="text">
             <p>I also enjoy collecting football and basketball cards which are sold mainly by
                 Panini America</p>
