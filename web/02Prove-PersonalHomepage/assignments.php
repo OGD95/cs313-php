@@ -13,8 +13,7 @@
 <body>
 
     <?php require 'header.php'; ?>
-
-    <button onclick="changePageName()">click me</button>
+    
 </body>
 
 </html>

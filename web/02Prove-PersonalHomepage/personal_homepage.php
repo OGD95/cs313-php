@@ -12,7 +12,14 @@
 
 <body>
 
+    <div class="header">
+        <h2 id='title'>Dylan's CS 313 </h2>
+        <hr>
+    </div>
+
     <?php require 'header.php'; ?>
+
+    <button onclick="changePageName()">click me</button>
 
     <div class="image_description">
         <img class="weddingPhoto" src="wedding photo.jpg" alt="Wedding Photo">
