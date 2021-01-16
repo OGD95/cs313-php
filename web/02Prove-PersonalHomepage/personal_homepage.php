@@ -10,7 +10,7 @@
     <title id="pageTitle">Homepage</title>
 </head>
 
-<body onloadeddata="changePageName()">
+<body onclick="changePageName()">
 
     <?php require 'header.php'; ?>
 
