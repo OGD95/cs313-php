@@ -12,7 +12,7 @@
 
 <body>
 
-    
+    <?php require "header.php" ?>
 
     <div class="image_description">
         <img class="weddingPhoto" src="wedding photo.jpg" alt="Wedding Photo">
