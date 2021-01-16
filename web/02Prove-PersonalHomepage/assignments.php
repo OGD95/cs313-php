@@ -6,7 +6,7 @@
     </link>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments</title>
+    <title id="pageTitle">Assignments</title>
 </head>
 
 <body>

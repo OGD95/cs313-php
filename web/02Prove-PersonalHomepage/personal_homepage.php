@@ -7,7 +7,7 @@
     <script src="functions.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title id="pageTitle">Homepage</title>
 </head>
 
 <body onload="changePageName()">
