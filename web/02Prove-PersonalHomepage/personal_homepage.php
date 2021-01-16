@@ -19,7 +19,7 @@
         <a id="localLink" href="assignments.html" title="Go to Assignments Page">Assignments</a>
     </div> -->
 
-    <?php require 'header.php' ?>
+    <?php require 'header.php'; ?>
 
     <div class="image_description">
         <img class="weddingPhoto" src="wedding photo.jpg" alt="Wedding Photo">

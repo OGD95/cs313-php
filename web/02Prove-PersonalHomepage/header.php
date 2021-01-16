@@ -16,7 +16,7 @@
     </div>
 
     <div class="homepage_menu">
-        <?php '<a id="localLink" href="assignments.html" title="Go to Assignments Page">Assignments</a>' ?>
+        <?php echo '<a id="localLink" href="assignments.html" title="Go to Assignments Page">Assignments</a>' ?>
     </div>
 
 </body>
