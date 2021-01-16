@@ -10,12 +10,11 @@
     <title id="pageTitle">Assignments</title>
 </head>
 
-<body onclick="changePageName()">
+<body>
 
     <?php require 'header.php'; ?>
 
-    <button onclick="changePageName()"> click to change pafe title</button>
-
+    <button onclick="changePageName()">click me</button>
 </body>
 
 </html>

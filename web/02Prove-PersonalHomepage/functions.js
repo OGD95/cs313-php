@@ -1,3 +1,3 @@
 function changePageName(){
-    document.getElementById("title").innerHtml = "Dylan's CS 313 ";
+    document.getElementById("title").innerHtml += document.getElementById("pageTitle");
 }
