@@ -45,6 +45,10 @@
     margin-top: 100px;
 }
 
+.weddingPhoto:hover{
+    transform: scale(1.5);
+}
+
 .image_description{
     display: block;
     margin-left: auto;
