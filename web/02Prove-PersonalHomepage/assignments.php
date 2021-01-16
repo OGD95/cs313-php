@@ -13,6 +13,13 @@
 
     <?php require 'header.php'; ?>
 
+    <div class="image_description">
+        <img class="weddingPhoto" src="UnderConstruction.png" alt="Page Under Construction">
+        <div class="text">
+            <p>Page Coming Soon!</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
