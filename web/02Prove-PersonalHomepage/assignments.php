@@ -10,7 +10,7 @@
     <title id="pageTitle">Assignments</title>
 </head>
 
-<body onload="changePageName()">
+<body onloadeddata="changePageName()">
 
     <?php require 'header.php'; ?>
 
