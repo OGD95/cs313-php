@@ -13,7 +13,7 @@
 <body>
 
     <div class="header">
-        <h2 id='title'>Dylan's CS 313 </h2>
+        <h2 id="title">Dylan's CS 313 </h2>
         <hr>
     </div>
 
