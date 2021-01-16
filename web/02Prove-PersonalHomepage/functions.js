@@ -1,3 +1,3 @@
 function zoom(){
-    document.getElementsByClassName("weddingPhoto").style.transform = "scale(1.5)";
+    document.getElementById("weddingPhoto").style.transform = "scale(1.5)";
 }
