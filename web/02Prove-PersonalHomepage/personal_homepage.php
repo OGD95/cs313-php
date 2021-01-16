@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="functions.js"></script>
     <link rel="stylesheet" href="personal_homepage.css">
     </link>
     <meta charset="UTF-8">
@@ -21,7 +22,7 @@
     </div>
 
     <div class="image_description">
-        <img class="weddingPhoto" src="topps-logo.png" alt="Topps' Logo">
+        <img onmouseover="zoom()" class="weddingPhoto" src="topps-logo.png" alt="Topps' Logo">
         <div class="text">
             <p>One of my passions is collecting baseball cards. Topps is the main seller of
                 licensed baseball cards in the United States</p>
