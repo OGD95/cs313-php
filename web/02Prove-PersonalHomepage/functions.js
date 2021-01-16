@@ -1,3 +1,3 @@
 function changePageName(){
-    document.getElementById("title").innerHtml = "hello world";
+    document.getElementById("test").innerHtml = "hello world";
 }
