@@ -9,9 +9,9 @@
 
 <body>
 
-    <?php require 'header.php'; ?>
+    <?php require '/header.php'; ?>
 
-    <p>It Worked!</p>
+    <h1>It Worked!</h1>
 </body>
 
 </html>
