@@ -11,7 +11,6 @@
 
 <body>
 
-    <?php require './header.php'; ?>
 
     <h1>It Worked!</h1>
 </body>
