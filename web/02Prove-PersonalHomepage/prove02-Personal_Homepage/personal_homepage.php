@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/prove02-Personal_Homepage/personal_homepage.css">
+    <link rel="stylesheet" href="personal_homepage.css">
     </link>
     <script src="../functions.js"></script>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
 <body>
 
-    <?php require "header.php" ?>
+    <?php require "../header.php" ?>
 
     <div class="image_description">
         <img onmouseover="zoom(this)" onmouseout="zoomOut(this)" class="weddingPhoto" src="../images/wedding photo.jpg" alt="Wedding Photo">
