@@ -15,6 +15,14 @@ $_SESSION["cart"] = $cart = [];
 </head>
 
 <body>
+    
+    <?php
+    $cart = $_SESSION["cart"];
+    $cart += $_GET["item1"];
+    $_SESSION["cart"] = $cart;
+    print_r($_SESSION["cart"]);
+    ?>
+
     <?php require '../header.php'; ?>
 
     <div class="image_description">
@@ -39,13 +47,8 @@ $_SESSION["cart"] = $cart = [];
     </div>
 
     <button><a href="cart.php">View Cart</a></button>
+
     
-    <?php
-    $cart = $_SESSION["cart"];
-    $cart += $_GET["item1"];
-    $_SESSION["cart"] = $cart;
-    print_r($_SESSION["cart"]);
-    ?>
 
 </body>
 
