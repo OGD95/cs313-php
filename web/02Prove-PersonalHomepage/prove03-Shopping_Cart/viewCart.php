@@ -28,6 +28,13 @@ session_start();
         }
     };
     ?>
+    <div class="image_description" <?php if($item1Count == 0 && $item2Count == 0){echo 'id="hideElement"';} ?>>
+        <img class="photo" src="../images/emptyCart.JPG" alt="Panini Fanatics Optic Mega Box">
+        <div class="text">
+            <b>Your cart is empty return to items page to purchase items</b>
+            <button><a href="browse-items.php">Continue Shopping</a></button>
+        </div>
+    </div>
 
     <div class="image_description" <?php if($item1Count == 0){echo 'id="hideElement"';} ?>>
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
@@ -46,7 +53,7 @@ session_start();
         </div>
     </div>
 
-    <button><a href="browse-items.php">Continue Shopping</a></button>
+    <button <?php if($item1Count != 0 || $item2Count != 0){echo 'id="hideElement"';} ?>><a href="browse-items.php">Continue Shopping</a></button>
 </body>
 
 </html>
