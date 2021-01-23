@@ -1,6 +1,5 @@
 <?php
 session_start();
-$cart = $_SESSION["cart"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +18,7 @@ $cart = $_SESSION["cart"];
     <?php require '../header.php'; ?>
 
     <?php 
-    if(isset($_GET["item1"])){
-        array_push($cart, $_GET["item1"]);
-    }
-    if(isset($_GET["item2"])){
-        array_push($cart, $_GET["item2"]);
-    }
-    $_SESSION["cart"] = $cart;
-    var_dump($_SESSION["cart"]);
-    echo count($cart);
+    
     ?>
 
     <div class="image_description">

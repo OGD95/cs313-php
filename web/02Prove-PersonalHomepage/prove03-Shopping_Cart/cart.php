@@ -1,8 +1,16 @@
 <?php
 session_start();
 
-$cart = $_GET['item1'];
+$item = $_GET["item"];
 
-print_r($cart);
+if(!isset($_SESSION["cart"])){
+    $_SESSION["cart"] = [];
+}
+
+$cart = $_SESSION["cart"];
+
+array_push($cart, $item);
+
+$_SESSION["cart"] = $cart;
 
 ?>
