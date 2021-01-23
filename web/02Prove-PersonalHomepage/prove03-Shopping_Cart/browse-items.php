@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION["cart"] = [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@ session_start();
         array_push($cart, $_GET["item1"]);
     }
     if(isset($_GET["item2"])){
-        array_push($cart, $_GET["item2"]);
+        $cart = $_GET["item2"];
     }
     $_SESSION["cart"] = $cart;
     var_dump($_SESSION["cart"]);
