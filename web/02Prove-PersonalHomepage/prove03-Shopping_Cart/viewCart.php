@@ -37,7 +37,7 @@ session_start();
         </div>
     </div>
 
-    <div class="image_description" <?php if($item1Count == 0){echo 'id="hideElement"';} ?>>
+    <div class="image_description" <?php if($item2Count == 0){echo 'id="hideElement"';} ?>>
     <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
         <div class="text">
         <p><b>2020 Panini Contenders Football Hobby Box -</b> Contains 108 Total Cards Including 5 Guaranteed Autograph 1 of Which Being on Card</p>
