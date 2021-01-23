@@ -22,15 +22,13 @@ $_SESSION["cart"] = [];
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-
-        <form action="browse-items.php" method="get">
-            <button name="item1" value="optic_mega_box">Add to Cart</button>
-        </form>
+        <button type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
     </div>
 
     <?php
     $cart = $_GET['item1'];
-    print_r($cart);
+    $_SESSION["cart"] = $cart;
+    print_r($_SESSION["cart"]);
     ?>
 
     <div class="image_description">
