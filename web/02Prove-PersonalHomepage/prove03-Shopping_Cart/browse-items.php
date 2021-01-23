@@ -15,6 +15,9 @@
 
     <div class="image_description">
         <img class="weddingPhoto" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
+        <div class="text">
+            <p>2020 Panini Donruss Optic Fanatics Mega Box - Contains Forty Total Cards Including One Garunteed Autograph and One Mega Box Exclusive Rookie Memorabilia Card</p>
+        </div>
     </div>
 </body>
 
