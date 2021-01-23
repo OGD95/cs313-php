@@ -1,5 +1,3 @@
-$_SESSION["cart"] = [];
-
 function zoom(image){
     image.style.transform = "scale(1.5)";
 }

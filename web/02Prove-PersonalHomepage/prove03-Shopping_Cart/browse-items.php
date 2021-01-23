@@ -1,4 +1,5 @@
-<?php session_start() ?>
+<?php session_start();
+$_SESSION["cart"] = [] ?>
 <!DOCTYPE html>
 <html lang="en">
 
