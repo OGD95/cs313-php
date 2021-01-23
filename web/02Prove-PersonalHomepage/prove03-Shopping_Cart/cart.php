@@ -3,8 +3,6 @@ session_start();
 
 $item = $_REQUEST["item"];
 
-
-
 if(!isset($_SESSION["cart"])){
     $_SESSION["cart"] = [];
 }

@@ -14,7 +14,11 @@ session_start();
 </head>
 
 <body>
-<h1>It Works!</h1>
+    <?php require '../header.php'; ?>
+
+    
+
+    <button><a href="browse-items.php">Continue Shopping</a></button>
 </body>
 
 </html>

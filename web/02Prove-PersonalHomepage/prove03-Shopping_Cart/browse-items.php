@@ -17,10 +17,6 @@ session_start();
 
     <?php require '../header.php'; ?>
 
-    <?php 
-    
-    ?>
-
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
         <div class="text">
@@ -29,9 +25,7 @@ session_start();
             <button onclick="addToCart('optic_mega_box')" type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
     </div>
 
-    <?php var_dump($_SESSION["cart"]); ?>
-
-    <p>Suggestions: <span id="txtHint"></span></p>
+    <!-- <p>Suggestions: <span id="txtHint"></span></p> -->
 
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
