@@ -41,7 +41,7 @@ session_start();
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
             <span>QTY: <?php echo $item1Count; ?></span>
-            <button onclick="removeItem('contenders_hobby_box')" type="submit">Delete Item From Cart</button>
+            <button onclick="removeItem('optic_mega_box')" type="submit">Delete Item From Cart</button>
         </div>
     </div>
 
