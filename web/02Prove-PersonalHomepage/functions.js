@@ -8,6 +8,6 @@ function zoomOut(image){
 
 function addToCart(item){
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "cart.php?item=" + item, true);
+    xmlhttp.open("GET", "prove03-Shoppingf_Cart/cart.php?item=" + item, true);
     xmlhttp.send();
 }
