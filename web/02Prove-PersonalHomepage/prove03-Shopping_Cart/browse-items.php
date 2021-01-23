@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +13,9 @@
 <body>
     <?php require '../header.php'; ?>
 
-    <img class="weddingPhoto" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
+    <div class="image_description">
+        <img class="weddingPhoto" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
+    </div>
 </body>
 
 </html>
