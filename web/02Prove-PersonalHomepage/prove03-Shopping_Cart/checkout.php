@@ -18,6 +18,10 @@
         <input type="text" id="address" name="address" placeholder="e.g. 123 Nowhere Ave."><br>
         <label for="city">City:</label><br>
         <input type="text" id="city" name="city" placeholder="e.g. Rexburg">
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" placeholder="e.g. ID">
+        <label for="zip">Zip Code:</label><br>
+        <input type="text" id="zip" name="zip" placeholder="e.g. 83440">
     </form>
 </body>
 
