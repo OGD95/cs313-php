@@ -18,15 +18,15 @@ session_start();
     <?php require '../header.php'; ?>
 
     <?php
-    $item1Count = 0;
-    $item2Count = 0;
-    foreach($_SESSION["cart"] as $item){
-        if($item == "optic_mega_box"){
-            $item1Count += 1;
-        }else{
-            $item2Count += 1;
-        }
-    };
+    // $item1Count = 0;
+    // $item2Count = 0;
+    // foreach($_SESSION["cart"] as $item){
+    //     if($item == "optic_mega_box"){
+    //         $item1Count += 1;
+    //     }else{
+    //         $item2Count += 1;
+    //     }
+    // };
     ?>
 
     <div class="image_description" <?php if($item1Count == 0){echo 'id="hideElement"';} ?>>
