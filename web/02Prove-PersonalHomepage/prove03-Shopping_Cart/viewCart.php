@@ -44,7 +44,8 @@ session_start();
             <span>QTY: <?php echo $item2Count; ?></span>
         </div>
     </div>
-    
+
+    <button><a href="browse-items.php">Continue Shopping</a></button>
 </body>
 
 </html>
