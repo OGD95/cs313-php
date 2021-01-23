@@ -14,5 +14,5 @@ $cart = $_SESSION["cart"];
 array_push($cart, $item);
 
 $_SESSION["cart"] = $cart;
-echo $_SESSION["cart"];
+var_dump($_SESSION["cart"]);
 ?>
