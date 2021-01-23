@@ -44,13 +44,7 @@ session_start();
             <span>QTY: <?php echo $item2Count; ?></span>
         </div>
     </div>
-
-    <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
-        <div class="text">
-            <p><b>2020 Panini Contenders Football Hobby Box -</b> Contains 108 Total Cards Including 5 Guaranteed Autograph 1 of Which Being on Card</p>
-        </div>
-
-    <button><a href="browse-items.php">Continue Shopping</a></button>
+    
 </body>
 
 </html>
