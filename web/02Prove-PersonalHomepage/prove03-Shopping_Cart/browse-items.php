@@ -22,8 +22,26 @@ $_SESSION["cart"] = [];
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-        <button type="submit" formmethod="get" name="item1" value="optic_mega_box">Add to Cart</button>
+        <form method="post">
+            <button type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
+        </form>
     </div>
+
+    <?php
+    if (array_key_exists('item1', $_POST)) {
+        addItem1();
+    } else if (array_key_exists('item2', $_POST)) {
+        addItem2();
+    }
+    function addItem1()
+    {
+        echo "This is Button1 that is selected";
+    }
+    function addItem2()
+    {
+        echo "This is Button2 that is selected";
+    }
+    ?>
 
     <?php
     $cart = $_GET['item1'];
