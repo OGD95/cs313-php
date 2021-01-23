@@ -25,6 +25,7 @@ session_start();
         $cart[1] = $_GET["item2"];
     }
     $_SESSION["cart"] = $cart;
+    print_r($_SESSION["cart"][0]);
     print_r($_SESSION["cart"][1]);
     echo count($cart);
     ?>
