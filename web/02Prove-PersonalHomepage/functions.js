@@ -11,3 +11,7 @@ function zoomOut(image){
 function addToCart(item){
     cart[item] += 1;
 }
+
+function returnCart(){
+    return cart;
+}
