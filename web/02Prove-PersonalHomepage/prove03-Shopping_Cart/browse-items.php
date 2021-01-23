@@ -25,8 +25,6 @@ session_start();
             <button onclick="addToCart('optic_mega_box')" type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
     </div>
 
-    <!-- <p>Suggestions: <span id="txtHint"></span></p> -->
-
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
         <div class="text">

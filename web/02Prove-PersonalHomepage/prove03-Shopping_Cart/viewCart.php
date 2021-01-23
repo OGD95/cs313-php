@@ -16,8 +16,6 @@ session_start();
 <body>
     <?php require '../header.php'; ?>
 
-    <?php var_dump($_SESSION["cart"]); ?>
-
     <?php
     $item1Count = 0;
     $item2Count = 0;
@@ -28,11 +26,12 @@ session_start();
             $item2Count += 1;
         }
     };
-    
-    echo 'QTY Item 1 = ' + $item1Count;
-
-    echo 'QTY Item 2 = ' + $item2Count;
     ?>
+
+    <div>
+    <img src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
+    <span>QTY: <?php echo $item1Count; ?></span>
+    </div>
 
     <button><a href="browse-items.php">Continue Shopping</a></button>
 </body>
