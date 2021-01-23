@@ -18,6 +18,15 @@ $_SESSION["cart"] = $cart = [];
 
     <?php require '../header.php'; ?>
 
+    <?php 
+    if(isset($_GET["item1"])){
+        $cart = $_GET["item1"];
+    }
+    if(isset($_GET["item2"])){
+        $cart = $_GET["item2"];
+    }
+    $_SESSION["cart"] = $cart;
+    ?>
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
         <div class="text">
@@ -28,8 +37,6 @@ $_SESSION["cart"] = $cart = [];
         </form>
 
     </div>
-
-
 
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
