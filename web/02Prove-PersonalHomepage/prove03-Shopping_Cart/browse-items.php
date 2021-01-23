@@ -1,5 +1,4 @@
-<?php session_start();
-$_SESSION["cart"] = ["hello"] ?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +13,8 @@ $_SESSION["cart"] = ["hello"] ?>
 
 <body>
     <?php require '../header.php'; ?>
+
+    <?php $_SESSION["cart"] = ["hello"] ?>
 
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
