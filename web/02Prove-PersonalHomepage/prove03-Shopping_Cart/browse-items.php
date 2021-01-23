@@ -42,7 +42,7 @@ session_start();
 
     </div>
 
-    <button><a href="cart.php">View Cart</a></button>
+    <button><a href="viewCart.php">View Cart</a></button>
 
 
 
