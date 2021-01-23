@@ -29,9 +29,9 @@ session_start();
         }
     };
     
-    echo "QTY Item 1 = " + $item1Count;
+    echo 'QTY Item 1 = ' + $item1Count;
 
-    echo "QTY Item 2 = " + $item2Count;
+    echo 'QTY Item 2 = ' + $item2Count;
     ?>
 
     <button><a href="browse-items.php">Continue Shopping</a></button>
