@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
 <body>
     <?php require '../header.php'; ?>
 
-    <h1>It Worked!</h1>
+    <img class="weddingPhoto" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
 </body>
 
 </html>
