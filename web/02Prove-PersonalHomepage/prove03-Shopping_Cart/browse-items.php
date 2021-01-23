@@ -27,8 +27,9 @@ session_start();
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
             <button onclick="addToCart('optic_mega_box')" type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
-
     </div>
+
+    <?php var_dump($_SESSION["cart"]); ?>
 
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
