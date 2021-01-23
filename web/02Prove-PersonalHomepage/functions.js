@@ -1,3 +1,5 @@
+var cart = {};
+
 function zoom(image){
     image.style.transform = "scale(1.5)";
 }
@@ -7,6 +9,5 @@ function zoomOut(image){
 }
 
 function addToCart(item){
-    $_SESSION["cart"] += item;
-    console.log($_SESSION["cart"]);
+    cart[item] = cart[item].value += 1;
 }
