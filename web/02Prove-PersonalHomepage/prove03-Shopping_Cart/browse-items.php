@@ -22,7 +22,7 @@ $_SESSION["cart"] = [];
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-        <button type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
+        <button type="submit" formmethod="get" name="item1" value="optic_mega_box">Add to Cart</button>
     </div>
 
     <?php
