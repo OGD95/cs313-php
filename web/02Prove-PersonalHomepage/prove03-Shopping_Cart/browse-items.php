@@ -31,6 +31,8 @@ session_start();
 
     <?php var_dump($_SESSION["cart"]); ?>
 
+    <p>Suggestions: <span id="txtHint"></span></p>
+
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
         <div class="text">
