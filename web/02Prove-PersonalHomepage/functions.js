@@ -8,11 +8,17 @@ function zoomOut(image){
 
 function addToCart(item){
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("txtHint").innerHTML = this.responseText;
-        }
-      };
+    // xmlhttp.onreadystatechange = function() {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //       document.getElementById("txtHint").innerHTML = this.responseText;
+    //     }
+    //   };
     xmlhttp.open("GET", "cart.php?item=" + item, true);
+    xmlhttp.send();
+}
+
+function removeItem(item){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "viewCartHelper.php?item=" + item, true);
     xmlhttp.send();
 }
