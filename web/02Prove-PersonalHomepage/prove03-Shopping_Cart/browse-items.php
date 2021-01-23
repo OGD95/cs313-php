@@ -28,7 +28,7 @@ $_SESSION["cart"] = $cart = [];
         array_push($cart, $_GET["item2"]);
     }
     $_SESSION["cart"] = $cart;
-    echo $_SESSION["cart"];
+    print_r($_SESSION["cart"]);
     ?>
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
