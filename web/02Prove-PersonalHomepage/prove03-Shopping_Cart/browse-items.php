@@ -26,6 +26,7 @@ session_start();
     }
     $_SESSION["cart"] = $cart;
     print_r($_SESSION["cart"]);
+    echo count($cart);
     ?>
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
