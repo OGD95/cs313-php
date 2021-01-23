@@ -25,14 +25,15 @@ $_SESSION["cart"] = $cart = [];
         <form action="../prove03-Shopping_Cart/browse-items.php" method="get">
             <button type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
         </form>
+        <?php
+        $cart = $_SESSION["cart"];
+        $cart += $_GET["item1"];
+        $_SESSION["cart"] = $cart;
+        print_r($_SESSION["cart"]);
+        ?>
     </div>
 
-    <?php
-    $cart = $_SESSION["cart"];
-    $cart += $_GET["item1"];
-    $_SESSION["cart"] = $cart;
-    print_r($_SESSION["cart"]);
-    ?>
+
 
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
