@@ -23,7 +23,7 @@ $_SESSION["cart"] = [];
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
 
-        <form action="browse_items.php" method="get">
+        <form action="browse-items.php" method="get">
             <button name="item1" value="optic_mega_box">Add to Cart</button>
         </form>
     </div>
