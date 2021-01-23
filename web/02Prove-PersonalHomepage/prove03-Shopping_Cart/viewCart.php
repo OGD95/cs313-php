@@ -7,6 +7,7 @@ session_start();
 <head>
     <link rel="stylesheet" href="../prove02-Personal_Homepage/personal_homepage.css">
     </link>
+    <link rel="stylesheet" href="viewCart.css"></link>
     <script src="../functions.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +29,7 @@ session_start();
     };
     ?>
 
-    <div class="image_description" <?php if($item1Count == 0){echo 'style="display: none";';} ?>>
+    <div class="image_description" <?php if($item1Count == 0){echo 'id="hideElement"';} ?>>
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
