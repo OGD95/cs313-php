@@ -29,6 +29,7 @@ $_SESSION["cart"] = [];
     </div>
 
     <?php
+    $cart = $_GET['item1'];
     print_r($cart);
     ?>
 
