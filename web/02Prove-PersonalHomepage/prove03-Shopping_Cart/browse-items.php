@@ -20,11 +20,13 @@ session_start();
     <?php 
     if(isset($_GET["item1"])){
         $cart[0] = $_GET["item1"];
+        $_SESSION["cart"] = $cart;
     }
     if(isset($_GET["item2"])){
         $cart[1] = $_GET["item2"];
+        $_SESSION["cart"] = $cart;
     }
-    $_SESSION["cart"] = $cart;
+    
     print_r($_SESSION["cart"]);
     echo count($cart);
     ?>
