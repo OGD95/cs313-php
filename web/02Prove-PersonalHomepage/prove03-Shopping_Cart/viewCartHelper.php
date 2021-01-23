@@ -1,7 +1,10 @@
 <?php
 session_start();
 $itemToRemove = $_REQUEST["item"];
-foreach($_SESSION["cart"] as $item)
+
+$cart = $_SESSION["cart"];
+
+foreach($cart as $item)
 {
     if($item == $itemToRemove){
         unset($item);
@@ -10,4 +13,14 @@ foreach($_SESSION["cart"] as $item)
         continue;
     }
 }
+
+for($i = 0; $i < count($cart); $i++){
+    if($cart[$i] == $itemToRemove){
+        unset($cart[$i]);
+    } else{
+        continue;
+    }
+}
+
+$_SESSION["cart"] = $cart;
 ?>
