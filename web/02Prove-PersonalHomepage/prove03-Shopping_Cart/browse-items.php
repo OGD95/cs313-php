@@ -15,13 +15,6 @@ $_SESSION["cart"] = $cart = [];
 </head>
 
 <body>
-    
-    <?php
-    $cart = $_SESSION["cart"];
-    $cart += $_GET["item1"];
-    $_SESSION["cart"] = $cart;
-    print_r($_SESSION["cart"]);
-    ?>
 
     <?php require '../header.php'; ?>
 
