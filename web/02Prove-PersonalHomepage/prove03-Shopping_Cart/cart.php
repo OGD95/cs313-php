@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$item = $_GET["item"];
+$item = $_REQUEST["item"];
 
 echo $item;
 
