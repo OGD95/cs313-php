@@ -9,5 +9,5 @@ function zoomOut(image){
 }
 
 function addToCart(item){
-    cart[item] = cart[item].value += 1;
+    cart[item] += 1;
 }
