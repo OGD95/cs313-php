@@ -1,6 +1,8 @@
 <?php
+if (session_status() == PHP_SESSION_NONE){
 session_start();
 $_SESSION["cart"] = $cart = [];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +22,10 @@ $_SESSION["cart"] = $cart = [];
 
     <?php 
     if(isset($_GET["item1"])){
-        $cart += $_GET["item1"];
+        $cart = $_GET["item1"];
     }
     if(isset($_GET["item2"])){
-        $cart += $_GET["item2"];
+        $cart = $_GET["item2"];
     }
     $_SESSION["cart"] = $cart;
     echo $_SESSION["cart"];
