@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$_SESSION["cart"] = [];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,17 +17,18 @@
 <body>
     <?php require '../header.php'; ?>
 
-    <iframe style="display:none;" name="target"></iframe>
-
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-        <form action="cart.php" method="get">
-            <button type="submit" target="target" name="item1" value="optic_mega_box">Add to Cart</button>
-        </form>
+
+        <button onclick="<?php $cart ?> = addToCart('optic_mega_box', <?php echo $cart ?>)" name="item1" value="optic_mega_box">Add to Cart</button>
     </div>
+
+    <?php 
+    print_r($cart);
+    ?>
 
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
