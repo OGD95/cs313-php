@@ -1,5 +1,8 @@
 <?php
+session_start();
 
-$item = $_GET['item'];
-print_r($item);
+$cart = $_GET['item1'];
+
+print_r($cart);
+
 ?>
