@@ -26,13 +26,6 @@ session_start();
         </form>
     </div>
 
-    <?php
-    $_SESSION["cart"] = [];
-    $cart = $_SESSION["cart"];
-    $cart += $_GET["item1"];
-    $_SESSION["cart"] = $cart;
-    print_r($_SESSION["cart"]);
-    ?>
 
     <div class="image_description">
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
