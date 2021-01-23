@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION["cart"] = [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,6 +27,7 @@ $_SESSION["cart"] = [];
     </div>
 
     <?php
+    $_SESSION["cart"] = [];
     $cart = $_SESSION["cart"];
     $cart += $_GET["item1"];
     $_SESSION["cart"] = $cart;

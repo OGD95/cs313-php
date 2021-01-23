@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <body>
 
     <div class="header">
@@ -15,5 +12,3 @@
     </div>
 
 </body>
-
-</html>
