@@ -1,5 +1,5 @@
 <?php session_start();
-$_SESSION["cart"] = [] ?>
+$_SESSION["cart"] = ["hello"] ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +20,7 @@ $_SESSION["cart"] = [] ?>
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-        <button onclick="$_SESSION['cart'] += value" value="optic_mega_box">Add to Cart</button>
+        <button onclick="console.log($_SESSION['cart'])" value="optic_mega_box">Add to Cart</button>
     </div>
 
     <div class="image_description">
@@ -28,7 +28,7 @@ $_SESSION["cart"] = [] ?>
         <div class="text">
             <p><b>2020 Panini Contenders Football Hobby Box -</b> Contains 108 Total Cards Including 5 Guaranteed Autograph 1 of Which Being on Card</p>
         </div>
-        <button onclick="$_SESSION['cart'] += value" value="contenders_hobby_box">Add to Cart</button>
+        <button onclick="console.log($_SESSION['cart'])" value="contenders_hobby_box">Add to Cart</button>
     </div>
 
 
