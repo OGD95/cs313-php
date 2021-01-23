@@ -11,7 +11,7 @@
     <div class="homepage_menu">
         <?php echo '<a id="localLink" href="../prove02-Personal_Homepage/personal_homepage.php" title="Go to Homepage">Homepage</a>' ?>
         <?php echo "|" ?>
-        <?php echo '<a id="localLink" href="../assignments.php" title="Go to Assignments Page">Assignments</a>' ?>
+        <?php echo '<a id="localLink" href="../prove02-Personal_Homepage/assignments.php" title="Go to Assignments Page">Assignments</a>' ?>
     </div>
 
 </body>
