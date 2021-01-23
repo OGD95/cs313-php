@@ -53,7 +53,7 @@ session_start();
         </div>
     </div>
 
-    <button <?php if($item1Count == 0 or $item2Count == 0){echo 'id="hideElement"';} ?>><a href="browse-items.php">Continue Shopping</a></button>
+    <button <?php if($item1Count == 0 and $item2Count == 0){echo 'id="hideElement"';} ?>><a href="browse-items.php">Continue Shopping</a></button>
 </body>
 
 </html>
