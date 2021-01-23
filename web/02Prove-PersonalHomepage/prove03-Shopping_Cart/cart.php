@@ -1,6 +1,6 @@
 <?php
 
 $item = $_GET['item'];
-echo $item;
 
 ?>
+<script>console.log($item)</script>
