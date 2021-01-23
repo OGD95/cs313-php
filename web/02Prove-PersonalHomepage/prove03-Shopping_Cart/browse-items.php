@@ -22,31 +22,16 @@ $_SESSION["cart"] = [];
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-        <form method="post">
+        <form action="browse-items.php" method="get">
             <button type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
         </form>
     </div>
 
-    <?php
-    if (array_key_exists('item1', $_POST)) {
-        addItem1();
-    } else if (array_key_exists('item2', $_POST)) {
-        addItem2();
-    }
-    function addItem1()
-    {
-        echo "This is Button1 that is selected";
-    }
-    function addItem2()
-    {
-        echo "This is Button2 that is selected";
-    }
-    ?>
-
-    <?php
-    $cart = $_GET['item1'];
-    $_SESSION["cart"] = $cart;
-    print_r($_SESSION["cart"]);
+    <?php 
+        $cart = $_SESSION["cart"];
+        $cart += $_GET["item1"];
+        $_SESSION["cart"] = $cart;
+        print_r($_SESSION["cart"]);
     ?>
 
     <div class="image_description">
@@ -56,6 +41,8 @@ $_SESSION["cart"] = [];
         </div>
         <button name="item2" value="contenders_hobby_box">Add to Cart</button>
     </div>
+
+    <button><a href="cart.php">View Cart</a></button>
 
 
 </body>
