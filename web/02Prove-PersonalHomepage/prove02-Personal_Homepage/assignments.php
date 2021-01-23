@@ -14,7 +14,7 @@
     <?php require '../header.php'; ?>
 
     <div>
-        <a href="../../">Prove 03 - PHP Shipping Cart</a>
+        <a href="../../02Prove-PersonalHomepage/prove03-Shopping_Cart/browse-items.php">Prove 03 - PHP Shipping Cart</a>
     </div>
 
 </body>
