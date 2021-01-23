@@ -36,12 +36,15 @@ $_SESSION["cart"] = $cart = [];
         <div class="text">
             <p><b>2020 Panini Contenders Football Hobby Box -</b> Contains 108 Total Cards Including 5 Guaranteed Autograph 1 of Which Being on Card</p>
         </div>
-        <button name="item2" value="contenders_hobby_box">Add to Cart</button>
+        <form action="../prove03-Shopping_Cart/browse-items.php" method="get">
+            <button type="submit" name="item2" value="contenders_hobby_box">Add to Cart</button>
+        </form>
+
     </div>
 
     <button><a href="cart.php">View Cart</a></button>
 
-    
+
 
 </body>
 
