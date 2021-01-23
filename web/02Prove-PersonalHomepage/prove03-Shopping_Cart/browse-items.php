@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION["cart"];
+$cart = $_SESSION["cart"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +19,6 @@ $_SESSION["cart"];
     <?php require '../header.php'; ?>
 
     <?php 
-    $cart = $_SESSION["cart"];
-
     if(isset($_GET["item1"])){
         array_push($cart, $_GET["item1"]);
     }
@@ -31,6 +29,7 @@ $_SESSION["cart"];
     var_dump($_SESSION["cart"]);
     echo count($cart);
     ?>
+
     <div class="image_description">
         <img class="photo" src="../images/optic_mega_box.jpg" alt="Panini Fanatics Optic Mega Box">
         <div class="text">
