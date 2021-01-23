@@ -16,7 +16,7 @@ session_start();
 <body>
     <?php require '../header.php'; ?>
 
-    
+    <?php var_dump($_SESSION["cart"]); ?>
 
     <button><a href="browse-items.php">Continue Shopping</a></button>
 </body>
