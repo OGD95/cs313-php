@@ -28,7 +28,7 @@ session_start();
         }
     };
     ?>
-    <div class="image_description" <?php if($item1Count != 0 and $item2Count != 0){echo 'id="hideElement"';} ?>>
+    <div class="image_description" <?php if($item1Count != 0 or $item2Count != 0){echo 'id="hideElement"';} ?>>
         <img class="photo" src="../images/emptyCart.JPG" alt="Panini Fanatics Optic Mega Box">
         <div class="text">
             <b>Your cart is empty return to items page to purchase items</b>
