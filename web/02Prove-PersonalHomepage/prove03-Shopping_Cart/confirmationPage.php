@@ -18,20 +18,20 @@ session_start();
 
     <?php
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $_SESSION["address"] = test_input($_POST["address"]);
-        $_SESSION["city"] = test_input($_POST["city"]);
-        $_SESSION["state"] = test_input($_POST["state"]);
-        $_SESSION["zip"] = test_input($_POST["zip"]);
-    }
+    // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //     $_SESSION["address"] = test_input($_POST["address"]);
+    //     $_SESSION["city"] = test_input($_POST["city"]);
+    //     $_SESSION["state"] = test_input($_POST["state"]);
+    //     $_SESSION["zip"] = test_input($_POST["zip"]);
+    // }
 
-    function test_input($data)
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
+    // function test_input($data)
+    // {
+    //     $data = trim($data);
+    //     $data = stripslashes($data);
+    //     $data = htmlspecialchars($data);
+    //     return $data;
+    // }
     ?>
 
     <h2 class="centerText">Congradulations! Your Items are on Their Way</h2>
