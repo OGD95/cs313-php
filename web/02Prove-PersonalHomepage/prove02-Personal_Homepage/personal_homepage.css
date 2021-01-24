@@ -1,11 +1,11 @@
-.header{
+.header {
     padding: 15px;
     text-align: left;
     background: aqua;
     text-indent: 25px;
 }
 
-.homepage_menu{
+.homepage_menu {
     padding: 10px;
     text-align: left;
     background: aqua;
@@ -14,34 +14,34 @@
     box-shadow: 10px 10px 5px grey;
 }
 
-#localLink{
+#localLink {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-#localLink:link{
+#localLink:link {
     color: black;
     text-decoration: none;
 }
 
-#localLink:active{
+#localLink:active {
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
-#localLink:hover{
+#localLink:hover {
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
-#localLink:visited{
+#localLink:visited {
     color: black;
     text-decoration: none;
 }
 
-.photo{
+.photo {
     height: 100%;
     width: 100%;
     display: block;
@@ -50,7 +50,7 @@
     margin-top: 100px;
 }
 
-.image_description{
+.image_description {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -60,20 +60,24 @@
     width: 25%;
 }
 
-.text{
+.text {
     text-align: center;
     padding: 10px 20px;
 }
 
-#center_button{
+#center_button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centerText {
     text-align: center;
 }
 
-.centerText{
-    text-align: center;
-}
-
-.notice{
+.notice {
     color: #b0b0b0;
     text-align: center;
 }
