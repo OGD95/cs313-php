@@ -29,7 +29,7 @@ session_start();
         <img class="photo" src="../images/panini_contenders_hobby_box.png" alt="Panini Contenders Hobby Box">
         <div class="text">
             <p><b>2020 Panini Contenders Football Hobby Box -</b> Contains 108 Total Cards Including 5 Guaranteed Autograph 1 of Which Being on Card</p>
-            <button id="center_button" onclick="addToCart('contenders_hobby_box')" type="submit" name="item2" value="contenders_hobby_box">Add to Cart</button>
+            <button onclick="addToCart('contenders_hobby_box')" type="submit" name="item2" value="contenders_hobby_box">Add to Cart</button>
         </div>
             
         
