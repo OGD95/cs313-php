@@ -39,8 +39,9 @@
         <input type="text" id="state" name="state" placeholder="e.g. ID"><br>
         <label for="zip">Zip Code:</label><br>
         <input type="text" id="zip" name="zip" placeholder="e.g. 83440"><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Complete Purchase">
     </form>
+    <button><a href="viewCart.php">Return to Cart</a></button>
 </body>
 
 </html>
