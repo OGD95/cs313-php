@@ -37,7 +37,6 @@ session_start();
     <h2 class="centerText">Congradulations! Your Items are on Their Way</h2>
     <p class="notice">*Please allow 5 to 7 days for Shipping and Handeling</p>
 
-    <p>The Following Items will be sent to <?php$_SESSION["address"]?>, <?php$_SESSION["city"]?>, <?php$_SESSION["state"]?> <?php$_SESSION["zip"]?>
 
 </body>
 
