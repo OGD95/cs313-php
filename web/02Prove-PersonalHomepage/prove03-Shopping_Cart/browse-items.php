@@ -22,7 +22,9 @@ session_start();
         <div class="text">
             <p><b>2020 Panini Donruss Optic Football Fanatics Mega Box -</b> Contains 40 Total Cards Including 1 Guaranteed Autograph and 1 Mega Box Exclusive Rookie Memorabilia Card</p>
         </div>
-            <button id="center_button" onclick="addToCart('optic_mega_box')" type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
+        <div id="center_button">
+            <button onclick="addToCart('optic_mega_box')" type="submit" name="item1" value="optic_mega_box">Add to Cart</button>
+        </div>
     </div>
 
     <div class="image_description">
@@ -30,7 +32,9 @@ session_start();
         <div class="text">
             <p><b>2020 Panini Contenders Football Hobby Box -</b> Contains 108 Total Cards Including 5 Guaranteed Autograph 1 of Which Being on Card</p>
         </div>
+        <div id="center_button">
             <button id="center_button" onclick="addToCart('contenders_hobby_box')" type="submit" name="item2" value="contenders_hobby_box">Add to Cart</button>
+        </div>
 
     </div>
 
