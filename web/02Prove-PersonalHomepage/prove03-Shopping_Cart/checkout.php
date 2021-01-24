@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <?php require '../header.php';
-    ?>
+    <?php require '../header.php'; ?>
 
     <form method="POST" action="confirmationPage.php">
         <label for="address">Address:</label><br>
@@ -24,7 +23,7 @@
         <input type="text" id="state" name="state" placeholder="e.g. ID"><br>
         <label for="zip">Zip Code:</label><br>
         <input type="text" id="zip" name="zip" placeholder="e.g. 83440"><br>
-        <input type="submit" value="Complete Purchase">
+        <input type="submit" value="completePurchase">
     </form>
     <button><a href="viewCart.php">Return to Cart</a></button>
 </body>

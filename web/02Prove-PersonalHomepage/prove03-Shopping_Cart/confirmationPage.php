@@ -2,10 +2,10 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $_SESSION["address"] = test_input($_POST["address"]);
-    $_SESSION["city"] = test_input($_POST["city"]);
-    $_SESSION["state"] = test_input($_POST["state"]);
-    $_SESSION["zip"] = test_input($_POST["zip"]);
+    $_SESSION["address"] = test_input($_POST["completePurchase"]["address"]);
+    $_SESSION["city"] = test_input($_POST["completePurchase"]["city"]);
+    $_SESSION["state"] = test_input($_POST["completePurchase"]["state"]);
+    $_SESSION["zip"] = test_input($_POST["completePurchase"]["zip"]);
 }
 
 function test_input($data)
