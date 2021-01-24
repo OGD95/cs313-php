@@ -13,24 +13,9 @@
 
 <body>
     <?php require '../header.php';
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $_SESSION["address"] = test_input($_POST["address"]);
-        $_SESSION["city"] = test_input($_POST["city"]);
-        $_SESSION["state"] = test_input($_POST["state"]);
-        $_SESSION["zip"] = test_input($_POST["zip"]);
-    }
-
-    function test_input($data)
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
     ?>
 
-    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="POST" action="confirmationPage.php">
         <label for="address">Address:</label><br>
         <input type="text" id="address" name="address" placeholder="e.g. 123 Nowhere Ave."><br>
         <label for="city">City:</label><br>

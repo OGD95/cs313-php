@@ -68,3 +68,11 @@
 #center_button{
     text-align: center;
 }
+
+.centerText{
+    text-align: center;
+}
+
+.notice{
+    font-weight: lighter;
+}
