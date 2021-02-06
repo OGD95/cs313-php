@@ -29,6 +29,13 @@ session_start();
         echo '<br/>';
     }
 
+    echo 'SELECT s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
+    FROM card_listings cl
+    INNER JOIN sports s ON cl.sport_id = s.sport_id
+    INNER JOIN conditions c ON cl.condition_id = c.condition_id
+    INNER JOIN manufacturer m ON cl.manufacturer_id = m.manufacturer_id
+    WHERE cl.account_id = ' . $_GET['user'];
+
     foreach ($db->query('SELECT s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
                         FROM card_listings cl
                         INNER JOIN sports s ON cl.sport_id = s.sport_id
