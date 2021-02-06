@@ -40,7 +40,7 @@ session_start();
                         INNER JOIN sports s ON cl.sport_id = s.sport_id
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
-                        ORDER BY ' . $_GET["sort_option"]) as $row) {
+                        WHERE cl.account_id = ' . $_GET['user']) as $row) {
             echo '<a id="listing_link" href="listing_view.php?listing_id=' . $row['listing_id'] . '">';
             echo ' Sport: ' . $row['sport'];
             echo '<br/>';
