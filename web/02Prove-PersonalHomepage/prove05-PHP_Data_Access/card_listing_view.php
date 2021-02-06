@@ -29,12 +29,12 @@ session_start();
         <form action="">
             <label for="cars">Sort By:</label>
             <select name="sort_option" id="options">
-                <option value="username">Seller</option>
-                <option value="sport">Sport</option>
-                <option value="card_condition">Condition</option>
-                <option value="manufacturer">Manufacturer</option>
-                <option value="athlete_first_name">Athlete First Name</option>
-                <option value="athlete_last_name">Athlete Last Name</option>
+                <option <?php if ($_GET['sort_option'] == "username") echo "selected"; ?> value="username">Seller</option>
+                <option <?php if ($_GET['sort_option'] == "sport") echo "selected"; ?> value="sport">Sport</option>
+                <option <?php if ($_GET['sort_option'] == "card_condition") echo "selected"; ?> value="card_condition">Condition</option>
+                <option <?php if ($_GET['sort_option'] == "manufacturer") echo "selected"; ?> value="manufacturer">Manufacturer</option>
+                <option <?php if ($_GET['sort_option'] == "athlete_first_name") echo "selected"; ?> value="athlete_first_name">Athlete First Name</option>
+                <option <?php if ($_GET['sort_option'] == "athlete_last_name") echo "selected"; ?> value="athlete_last_name">Athlete Last Name</option>
             </select>
             <br><br>
             <input type="submit" value="Submit">
