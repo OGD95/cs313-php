@@ -1,6 +1,3 @@
-<?php
-require '../connection.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +14,7 @@ require '../connection.php';
 
     <?php
     require '../header.php';
+    require '../connection.php';
     ?>
 
     <?php
