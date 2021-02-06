@@ -23,7 +23,7 @@ session_start();
     <div id="card_listings">
 
         <script type="text/javascript">
-            document.getElementById('sort_option').value = "<?php echo $_GET['sort_option']; ?>";
+            document.getElementById('options').value = "<?php echo $_GET['sort_option']; ?>";
         </script>
 
         <form action="">
