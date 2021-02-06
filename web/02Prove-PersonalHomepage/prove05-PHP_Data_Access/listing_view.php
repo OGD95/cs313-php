@@ -43,6 +43,8 @@ session_start();
             echo '<br/>';
             echo ' Description: ' . $row['description'];
             echo '<br/>';
+
+            echo '<img src="insertimagehere.jpg" alt="Image Placeholder">';
         }
 
     ?>
