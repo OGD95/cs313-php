@@ -29,6 +29,8 @@ require '../connection.php';
         echo 'Athlete first name: ' . $row['athlete_first_name'];
         echo '<br/>';
     }
+
+    echo 'im here now';
     ?>
 
 </body>
