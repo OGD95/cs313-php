@@ -1,3 +1,6 @@
+<?php
+require '../connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +17,6 @@
 
     <?php
     require '../header.php';
-    require '../connection.php';
 
     $db = connectToDB();
 
