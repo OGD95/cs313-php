@@ -31,7 +31,7 @@ session_start();
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
                         WHERE listing_id = ' . $_GET["listing_id"]) as $row) {
-            echo ' Seller: ' . $row['username'];
+            echo ' Seller: ' . '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['username'] . '<a>';
             echo '<br/>';
             echo ' Sport: ' . $row['sport'];
             echo '<br/>';
@@ -46,7 +46,7 @@ session_start();
 
             echo '<img src="../images/insertimagehere.jpg" alt="Image Placeholder">';
         }
-
+        '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
     ?>
 
 </body>
