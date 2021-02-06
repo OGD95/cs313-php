@@ -34,23 +34,25 @@ session_start();
     <h3>Items for Sale:</h3><br\>
 
     <?php
-    foreach ($db->query('SELECT s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
+    foreach ($db->query('SELECT a.username, s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description, cl.listing_id
                         FROM card_listings cl
+                        INNER JOIN accounts a ON cl.account_id = a.account_id
                         INNER JOIN sports s ON cl.sport_id = s.sport_id
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
-                        WHERE cl.account_id = ' . $_GET['user']) as $row) {
-        echo ' Sport: ' . $row['sport'];
-        echo '<br/>';
-        echo ' Card Condition: ' . $row['card_condition'];
-        echo '<br/>';
-        echo ' Manufacturer: ' . $row['manufacturer'];
-        echo '<br/>';
-        echo ' Athlete Name: ' . $row['athlete_first_name'] . ' ' . $row['athlete_last_name'];
-        echo '<br/>';
-        echo '<hr>';
-
-    }
+                        ORDER BY ' . $_GET["sort_option"]) as $row) {
+            echo '<a id="listing_link" href="listing_view.php?listing_id=' . $row['listing_id'] . '">';
+            echo ' Sport: ' . $row['sport'];
+            echo '<br/>';
+            echo ' Card Condition: ' . $row['card_condition'];
+            echo '<br/>';
+            echo ' Manufacturer: ' . $row['manufacturer'];
+            echo '<br/>';
+            echo ' Athlete Name: ' . $row['athlete_first_name'] . ' ' . $row['athlete_last_name'];
+            echo '<br/>';
+            echo '</a>';
+            echo '<hr>';
+        }
 
     ?>
 
