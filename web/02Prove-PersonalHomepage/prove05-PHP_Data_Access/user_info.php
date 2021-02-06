@@ -27,9 +27,13 @@ session_start();
     foreach ($db->query('SELECT first_name, last_name, username, date(created_on) AS created_on FROM accounts WHERE account_id = ' . $_GET['user'] . 'ORDER BY last_name, first_name') as $row) {
         echo '<h3>User Profile</h3>';
         echo 'User ' . $row['username'] . ' has been a member since ' . $row['created_on'];
-
+        echo '<br/>';
     }
+    ?>
 
+    <h4>Items for Sale:</h4><br\>
+
+    <?php
     foreach ($db->query('SELECT s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
                         FROM card_listings cl
                         INNER JOIN sports s ON cl.sport_id = s.sport_id
