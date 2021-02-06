@@ -24,8 +24,8 @@ session_start();
 
     $db = connectToDB();
 
-    foreach ($db->query('SELECT first_name , last_name FROM accounts ORDER BY last_name, first_name') as $row) {
-        echo 'Seller: ' . '<a href="user_info.php?lname=' . $row['last_name'] . '&fname=' . $row['first_name'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
+    foreach ($db->query('SELECT first_name, last_name, account_id  FROM accounts ORDER BY last_name, first_name') as $row) {
+        echo 'Seller: ' . '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
         echo '<br/>';
     }
 

@@ -20,6 +20,14 @@ session_start();
     require '../connection.php';
     ?>
 
+    <?php
+
+    $db = connectToDB();
+
+    
+
+    ?>
+
 
 
 </body>
