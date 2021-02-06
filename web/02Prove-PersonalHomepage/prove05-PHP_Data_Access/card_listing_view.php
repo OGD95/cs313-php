@@ -22,6 +22,10 @@ session_start();
 
     <div id="card_listings">
 
+        <script type="text/javascript">
+            document.getElementById('sort_option').value = "<?php echo $_GET['sort_option']; ?>";
+        </script>
+
         <form action="">
             <label for="cars">Sort By:</label>
             <select name="sort_option" id="options">
@@ -36,9 +40,7 @@ session_start();
             <input type="submit" value="Submit">
         </form>
 
-        <script type="text/javascript">
-            document.getElementById('sort_option').value = "<?php echo $_GET['sort_option']; ?>";
-        </script>
+
 
         <?php
 
