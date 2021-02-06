@@ -17,7 +17,7 @@
         <a href="../../02Prove-PersonalHomepage/prove03-Shopping_Cart/browse-items.php">Prove 03 - PHP Shipping Cart</a>
         </br>
         </br>
-        <a href="../../02Prove-PersonalHomepage/prove05-PHP_Data_Access/card_listing_view.php?sort_option=seller">Prove 05 - PHP Data Access</a>
+        <a href="../../02Prove-PersonalHomepage/prove05-PHP_Data_Access/card_listing_view.php?sort_option=username">Prove 05 - PHP Data Access</a>
     </div>
 
 </body>
