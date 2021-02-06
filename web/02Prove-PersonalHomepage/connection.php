@@ -1,48 +1,28 @@
 <?php
 function connectToDB()
 {
-    // try {
-    //     $dbUrl = getenv('DATABASE_URL');
-
-    //     $dbOpts = parse_url($dbUrl);
-
-    //     $dbHost = $dbOpts["host"];
-    //     $dbPort = $dbOpts["port"];
-    //     $dbUser = $dbOpts["user"];
-    //     $dbPassword = $dbOpts["pass"];
-    //     $dbName = ltrim($dbOpts["path"], '/');
-
-    //     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-    //     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // } catch (PDOException $ex) {
-    //     echo 'Error!: ' . $ex->getMessage();
-    //     die();
-    // }
-
     // default Heroku Postgres configuration URL
-$dbUrl = getenv('DATABASE_URL');
+    $dbUrl = getenv('DATABASE_URL');
 
-if (empty($dbUrl)) {
- // example localhost configuration URL with postgres username and a database called cs313db
- $dbUrl = "postgres://postgres:password@localhost:5432/cs313db";
-}
+    if (empty($dbUrl)) {
+        // example localhost configuration URL with postgres username and a database called cs313db
+        $dbUrl = "postgres://postgres:password@localhost:5432/cs313db";
+    }
 
-$dbopts = parse_url($dbUrl);
+    $dbopts = parse_url($dbUrl);
 
-$dbHost = $dbopts["host"];
-$dbPort = $dbopts["port"];
-$dbUser = $dbopts["user"];
-$dbPassword = $dbopts["pass"];
-$dbName = ltrim($dbopts["path"],'/');
+    $dbHost = $dbopts["host"];
+    $dbPort = $dbopts["port"];
+    $dbUser = $dbopts["user"];
+    $dbPassword = $dbopts["pass"];
+    $dbName = ltrim($dbopts["path"], '/');
 
-try {
- $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-}
-catch (PDOException $ex) {
- print "<p>error: $ex->getMessage() </p>\n\n";
- die();
-}
+    try {
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    } catch (PDOException $ex) {
+        print "<p>error: $ex->getMessage() </p>\n\n";
+        die();
+    }
 
-return $db;
+    return $db;
 }

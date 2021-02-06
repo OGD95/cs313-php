@@ -21,15 +21,20 @@
 
     $db = connectToDB();
 
-    echo 'got here';
-
-    foreach ($db->query('SELECT username, password FROM accounts') as $row) {
-        echo 'user: ' . $row['username'];
-        echo ' password: ' . $row['password'];
+    foreach ($db->query('SELECT a.first_name, s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name
+	                    FROM card_listings cl
+	                    INNER JOIN accounts a ON cl.account_id = a.account_id
+	                    INNER JOIN sports s ON cl.sport_id = s.sport_id
+	                    INNER JOIN conditions c ON cl.condition_id = c.condition_id
+	                    INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id;') as $row) {
+        echo 'Seller: ' . $row['first_name'];
+        echo 'Sport: ' . $row['sport'];
+        echo 'Card Condition: ' . $row['card_condition'];
+        echo 'Manufacturer: ' . $row['manufacturer'];
+        echo 'Player First Name: ' . $row['athlete_first_name'];
+        echo 'Player Last Name: ' . $row['athlete_last_name'];
         echo '<br/>';
     }
-
-    echo 'im here now';
     ?>
 
 </body>
