@@ -23,6 +23,8 @@ require '../connection.php';
 
     $db = connectToDB();
 
+    echo 'got here';
+
     foreach ($db->query('SELECT athlete_first_name FROM card_listings') as $row) {
         echo 'Athlete first name: ' . $row['athlete_first_name'];
         echo '<br/>';
