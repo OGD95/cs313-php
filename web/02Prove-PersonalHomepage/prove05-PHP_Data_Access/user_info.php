@@ -43,8 +43,7 @@ session_start();
         echo ' Sport: ' . $row['sport'];
         echo ' Card Condition: ' . $row['card_condition'];
         echo ' Manufacturer: ' . $row['manufacturer'];
-        echo ' Player First Name: ' . $row['athlete_first_name'];
-        echo ' Player Last Name: ' . $row['athlete_last_name'];
+        echo ' Athlete Name: ' . $row['athlete_first_name'] . ' ' . $row['athlete_last_name'];
         echo '<br/>';
         echo '<hr>';
 
