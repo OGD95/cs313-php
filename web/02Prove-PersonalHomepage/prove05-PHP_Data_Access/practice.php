@@ -23,11 +23,11 @@
 
     echo 'got here';
 
-    foreach ($db->query('SELECT username, password FROM accounts') as $row) {
-        echo 'user: ' . $row['username'];
-        echo ' password: ' . $row['password'];
-        echo '<br/>';
-    }
+    // foreach ($db->query('SELECT username, password FROM accounts') as $row) {
+    //     echo 'user: ' . $row['username'];
+    //     echo ' password: ' . $row['password'];
+    //     echo '<br/>';
+    // }
 
     echo 'im here now';
     ?>

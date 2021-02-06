@@ -52,4 +52,10 @@ foreach ($db->query('SELECT now()') as $row)
 {
  print "<p>$row[0]</p>\n\n";
 }
+
+foreach ($db->query('SELECT username, password FROM accounts') as $row) {
+    echo 'user: ' . $row['username'];
+    echo ' password: ' . $row['password'];
+    echo '<br/>';
+}
 }
