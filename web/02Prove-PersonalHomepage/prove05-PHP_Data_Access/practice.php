@@ -20,9 +20,8 @@ require '../connection.php';
 
     $db = connectToDB();
 
-    foreach ($db->query('SELECT athlete_first_name, athlete_last_name FROM card_listings') as $row) {
+    foreach ($db->query('SELECT athlete_first_name FROM card_listings') as $row) {
         echo 'Athlete first name: ' . $row['athlete_first_name'];
-        echo ' Athlete last name: ' . $row['athlete_last_name'];
         echo '<br/>';
     }
     ?>
