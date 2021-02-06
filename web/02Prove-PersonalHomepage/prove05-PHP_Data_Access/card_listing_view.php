@@ -46,7 +46,7 @@ session_start();
                         INNER JOIN sports s ON cl.sport_id = s.sport_id
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
-                        ORDER BY ' . $_GET["sort_option"]) as $row) {
+                        ORDER BY ' . $_GET["sort_option"] . 'DESC') as $row) {
             echo ' Seller: ' . $row['username'];
             echo '<br/>';
             echo ' Sport: ' . $row['sport'];
