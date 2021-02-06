@@ -2,7 +2,7 @@
 function connectToDB()
 {
     try {
-        $dbUrl = getenv('DATABASE_URL');
+        $dbUrl = getenv('GRAY');
         $dbOpts = parse_url($dbUrl);
 
         $dbHost = $dbOpts["host"];
