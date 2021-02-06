@@ -44,7 +44,7 @@ session_start();
             echo ' Description: ' . $row['description'];
             echo '<br/>';
 
-            echo '<img src="insertimagehere.jpg" alt="Image Placeholder">';
+            echo '<img src="../images/insertimagehere.jpg" alt="Image Placeholder">';
         }
 
     ?>
