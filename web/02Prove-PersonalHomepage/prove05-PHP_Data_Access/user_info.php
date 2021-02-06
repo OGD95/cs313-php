@@ -35,7 +35,7 @@ session_start();
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturer m ON cl.manufaturer_id = c.manufacturer_id
                         WHERE cl.account_id = ' . $_GET['user']) as $row) {
-        echo var_dump($row);
+        var_dump($row);
         echo '<br/';
 
     }
