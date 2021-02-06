@@ -24,7 +24,7 @@ session_start();
 
     $db = connectToDB();
 
-    foreach ($db->query('SELECT first_name, last_name, username, date(created_on) AS created_on FROM accounts ORDER BY last_name, first_name') as $row) {
+    foreach ($db->query('SELECT first_name, last_name, username, date(created_on) AS created_on FROM accounts WHERE account_id = ' . $_GET['user'] . 'ORDER BY last_name, first_name') as $row) {
         echo '<h3>User Profile</h3>';
         echo 'User ' . $row['username'] . ' has been a member since ' . $row['created_on'];
 
