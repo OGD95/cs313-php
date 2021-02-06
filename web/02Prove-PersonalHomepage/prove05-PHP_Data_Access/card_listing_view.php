@@ -21,6 +21,9 @@ session_start();
     ?>
 
     <?php
+
+    $db = connectToDB();
+
     foreach ($db->query('SELECT a.username, s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
                         FROM card_listings cl
                         INNER JOIN accounts a ON cl.account_id = a.account_id
