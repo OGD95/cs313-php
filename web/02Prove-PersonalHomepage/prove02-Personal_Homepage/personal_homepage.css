@@ -73,3 +73,8 @@
     color: #b0b0b0;
     text-align: center;
 }
+
+#card_listings{
+    padding-left: 25px;
+    padding-right: 25px;
+}
