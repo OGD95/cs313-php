@@ -25,8 +25,8 @@ require '../connection.php';
 
     echo 'got here';
 
-    foreach ($db->query('SELECT athlete_first_name FROM card_listings') as $row) {
-        echo 'Athlete first name: ' . $row['athlete_first_name'];
+    foreach ($db->query('SELECT description FROM card_listings') as $row) {
+        echo 'Athlete first name: ' . $row['description'];
         echo '<br/>';
     }
 
