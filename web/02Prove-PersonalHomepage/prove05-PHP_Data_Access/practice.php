@@ -28,11 +28,11 @@
 	                    INNER JOIN conditions c ON cl.condition_id = c.condition_id
 	                    INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id;') as $row) {
         echo 'Seller: ' . $row['first_name'];
-        echo 'Sport: ' . $row['sport'];
-        echo 'Card Condition: ' . $row['card_condition'];
-        echo 'Manufacturer: ' . $row['manufacturer'];
-        echo 'Player First Name: ' . $row['athlete_first_name'];
-        echo 'Player Last Name: ' . $row['athlete_last_name'];
+        echo ' Sport: ' . $row['sport'];
+        echo ' Card Condition: ' . $row['card_condition'];
+        echo ' Manufacturer: ' . $row['manufacturer'];
+        echo ' Player First Name: ' . $row['athlete_first_name'];
+        echo ' Player Last Name: ' . $row['athlete_last_name'];
         echo '<br/>';
     }
     ?>
