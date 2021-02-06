@@ -16,7 +16,7 @@
     <div>
         <a href="../../02Prove-PersonalHomepage/prove03-Shopping_Cart/browse-items.php">Prove 03 - PHP Shipping Cart</a>
         <br\>
-        <a href="../../02Prove-PersonalHomepage/prove05-PHP_Date_Access/practice.php">Prove 05 - PHP Data Access</a>
+        <a href="../../02Prove-PersonalHomepage/prove05-PHP_Data_Access/practice.php">Prove 05 - PHP Data Access</a>
     </div>
 
 </body>
