@@ -51,7 +51,7 @@ session_start();
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
                         ORDER BY ' . $_GET["sort_option"]) as $row) {
-            echo '<a href="listing_view?listing_id=' . $row['listing_id'] . '">';
+            echo '<a id="listing_link" href="listing_view?listing_id=' . $row['listing_id'] . '">';
             echo ' Seller: ' . $row['username'];
             echo '<br/>';
             echo ' Sport: ' . $row['sport'];

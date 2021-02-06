@@ -78,3 +78,12 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
+#listing_link:link{
+    color: black;
+}
+
+#listing_link:hover{
+    color: black;
+    text-decoration: underline;
+}
