@@ -21,7 +21,7 @@
 
     $db = connectToDB();
 
-    foreach ($db->query('SELECT a.first_name, s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name
+    foreach ($db->query('SELECT a.first_name, s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
 	                    FROM card_listings cl
 	                    INNER JOIN accounts a ON cl.account_id = a.account_id
 	                    INNER JOIN sports s ON cl.sport_id = s.sport_id
