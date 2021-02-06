@@ -21,10 +21,25 @@ session_start();
     ?>
 
     <div id="card_listings">
+
+        <form action="">
+            <label for="cars">Order By:</label>
+            <select name="sort_option" id="options">
+                <option value="username">User</option>
+                <option value="sport">Sport</option>
+                <option value="card_condition">Condition</option>
+                <option value="manufacturer">Manufacturer</option>
+                <option value="athlete_first_name">Athlete First Name</option>
+                <option value="athlete_last_name">Athlete Last Name</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
         <?php
 
         $db = connectToDB();
-        
+
         foreach ($db->query('SELECT a.username, s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
                         FROM card_listings cl
                         INNER JOIN accounts a ON cl.account_id = a.account_id
