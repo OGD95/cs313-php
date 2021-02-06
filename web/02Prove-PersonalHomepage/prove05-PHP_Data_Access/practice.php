@@ -26,7 +26,8 @@
 	                    INNER JOIN accounts a ON cl.account_id = a.account_id
 	                    INNER JOIN sports s ON cl.sport_id = s.sport_id
 	                    INNER JOIN conditions c ON cl.condition_id = c.condition_id
-	                    INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id;') as $row) {
+	                    INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
+                        ORDER BY first_name;') as $row) {
         echo 'Seller: ' . $row['first_name'];
         echo ' Sport: ' . $row['sport'];
         echo ' Card Condition: ' . $row['card_condition'];
