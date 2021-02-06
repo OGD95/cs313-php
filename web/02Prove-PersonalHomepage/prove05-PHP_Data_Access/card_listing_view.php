@@ -36,6 +36,10 @@ session_start();
             <input type="submit" value="Submit">
         </form>
 
+        <script type="text/javascript">
+            document.getElementById('sort_option').value = "<?php echo $_GET['sort_option']; ?>";
+        </script>
+
         <?php
 
         $db = connectToDB();
