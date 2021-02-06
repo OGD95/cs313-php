@@ -41,8 +41,11 @@ session_start();
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
                         WHERE cl.account_id = ' . $_GET['user']) as $row) {
         echo ' Sport: ' . $row['sport'];
+        echo '<br/>';
         echo ' Card Condition: ' . $row['card_condition'];
+        echo '<br/>';
         echo ' Manufacturer: ' . $row['manufacturer'];
+        echo '<br/>';
         echo ' Athlete Name: ' . $row['athlete_first_name'] . ' ' . $row['athlete_last_name'];
         echo '<br/>';
         echo '<hr>';
