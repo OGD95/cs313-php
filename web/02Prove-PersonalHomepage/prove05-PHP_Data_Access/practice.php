@@ -17,6 +17,9 @@ require '../connection.php';
 
     <?php
     require '../header.php';
+    ?>
+
+    <?php
 
     $db = connectToDB();
 
