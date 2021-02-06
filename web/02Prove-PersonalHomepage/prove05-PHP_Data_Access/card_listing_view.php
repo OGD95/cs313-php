@@ -23,9 +23,9 @@ session_start();
     <div id="card_listings">
 
         <form action="">
-            <label for="cars">Order By:</label>
+            <label for="cars">Sort By:</label>
             <select name="sort_option" id="options">
-                <option value="username">User</option>
+                <option value="username">Seller</option>
                 <option value="sport">Sport</option>
                 <option value="card_condition">Condition</option>
                 <option value="manufacturer">Manufacturer</option>
@@ -45,7 +45,8 @@ session_start();
                         INNER JOIN accounts a ON cl.account_id = a.account_id
                         INNER JOIN sports s ON cl.sport_id = s.sport_id
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
-                        INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id') as $row) {
+                        INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
+                        ORDER BY ' . $_GET["sort_option"]) as $row) {
             echo ' Seller: ' . $row['username'];
             echo '<br/>';
             echo ' Sport: ' . $row['sport'];
