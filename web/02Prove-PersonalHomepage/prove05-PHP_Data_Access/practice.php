@@ -1,7 +1,5 @@
 <?php
 require '../connection.php';
-
-$db = connectToDB();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +20,8 @@ $db = connectToDB();
     ?>
 
     <?php
+
+    $db = connectToDB();
 
     echo 'got here';
 
