@@ -24,9 +24,10 @@ session_start();
 
     $db = connectToDB();
 
-    foreach ($db->query('SELECT first_name, last_name, username  FROM accounts ORDER BY last_name, first_name') as $row) {
-        echo 'Seller: ';
-        echo '<br/>';
+    foreach ($db->query('SELECT first_name, last_name, username, date(created_on) AS created_on FROM accounts ORDER BY last_name, first_name') as $row) {
+        echo '<h3>User Profile</h3>';
+        echo 'User ' . $row['username'] . ' has been a member since ' . $row['created_on'];
+
     }
 
     foreach ($db->query('SELECT s.sport, c.card_condition, m.manufacturer, cl.athlete_first_name, cl.athlete_last_name, cl.description
