@@ -46,6 +46,7 @@ session_start();
         echo ' Player First Name: ' . $row['athlete_first_name'];
         echo ' Player Last Name: ' . $row['athlete_last_name'];
         echo '<br/>';
+        echo '<hr>';
 
     }
 
