@@ -37,7 +37,7 @@ session_start();
                 <option <?php if ($_GET['sort_option'] == "athlete_last_name") echo "selected"; ?> value="athlete_last_name">Athlete Last Name</option>
             </select>
             <br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Sort">
         </form>
 
         <?php
