@@ -27,7 +27,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     $seller = $row['account_id'];
 }
 
-echo $seller;
+echo 'SELECT account_id FROM accounts WHERE username=' . $seller;
 
 $query = 'INSERT INTO card_listings(account_id, sport_id, condition_id, manufacturer_id, athlete_first_name, athlete_last_name, description) 
           VALUES (:account_id, :sport_id, :condition_id, :manufacturer_id, :athlete_first_name, :athlete_last_name, :description)';
