@@ -49,6 +49,8 @@ $db = connectToDB();
         }
         ?>
 
+        </br> </br>
+
         <?php
         $statement = $db->prepare('SELECT sport_id, sport FROM sports');
         $statement->execute();
@@ -65,6 +67,8 @@ $db = connectToDB();
             echo "\n";
         }
         ?>
+
+        </br> </br>
 
         <?php
         $statement = $db->prepare('SELECT manufacturer_id, manufacturer FROM manufacturers');
@@ -83,6 +87,8 @@ $db = connectToDB();
         }
         ?>
 
+        </br> </br>
+
         <label for="seller">Sellers Username:</label>
         <input type="text" id="seller" name="seller"></input>
 
@@ -90,6 +96,8 @@ $db = connectToDB();
 
         <label for="listingDescription">Listing Description:</label>
         <textarea id="listingDescription" name="listingDescription"></textarea>
+
+        </br> </br>
 
         <input type="submit" value="Add Listing">
 
