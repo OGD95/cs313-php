@@ -22,12 +22,14 @@ $db = connectToDB();
     ?>
 
     <form id="cardListingForm" action="insertListing.php" method="POST">
-        <input type="text" id="athlete_first_name" name="athlete_first_name"></input>
         <label for="athlete_first_name">Athlete's First Name:</label>
+        <input type="text" id="athlete_first_name" name="athlete_first_name"></input>
+        
         </br> </br>
 
-        <input type="text" id="athlete_last_name" name="athlete_last_name"></input>
         <lable for="athlete_last_name">Athlete's Last Name:</lable>
+        <input type="text" id="athlete_last_name" name="athlete_last_name"></input>
+        
         </br> </br>
 
         <input type="submit" value="Add Listing">
