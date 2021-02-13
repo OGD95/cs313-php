@@ -10,6 +10,7 @@ $sport_id = $_POST['radioSport'];
 $manufacturer_id = $_POST['radioManufacturer'];
 $description = $_POST['listingDescription'];
 $seller = $_POST['seller'];
+$listing_id = $_POST['listingId'];
 
 
 $statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . '\'' . $_POST['seller'] . '\'');
@@ -19,24 +20,25 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     $seller = $row['account_id'];
 }
 
-$query = 'INSERT INTO card_listings(account_id, sport_id, condition_id, manufacturer_id, athlete_first_name, athlete_last_name, description) 
-          VALUES (:account_id, :sport_id, :condition_id, :manufacturer_id, :athlete_first_name, :athlete_last_name, :description)';
+$query = 'UPDATE card_listings
+          SET account_id=:seller, sport_id=:sport_id, condition_id=:condition_id, manufacturer_id=:manufacturer_id, athlete_first_name=\':athleteFirstName\', athlete_last_name=\':athleteLastName\', description=\':description\'
+          WHERE listing_id=:listingId';
 
 $statement = $db->prepare($query);
 
-$statement->bindValue(':account_id', $seller);
+$statement->bindValue(':seller', $seller);
 $statement->bindValue(':sport_id', $sport_id);
 $statement->bindValue(':condition_id', $condition_id);
 $statement->bindValue(':manufacturer_id', $manufacturer_id);
-$statement->bindValue(':athlete_first_name', $athleteFirstName);
-$statement->bindValue(':athlete_last_name', $athleteLastName);
+$statement->bindValue(':athleteFirstName', $athleteFirstName);
+$statement->bindValue(':athleteLastName', $athleteLastName);
 $statement->bindValue(':description', $description);
+$statement->bindValue(':listingId', $listing_id);
 
 $statement->execute();
 
-$listing_id = $db->lastInsertId("card_listings_listing_id_seq");
+
 
 header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=$listing_id");
 
-die();
 ?>
