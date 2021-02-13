@@ -13,6 +13,7 @@ $seller = $_POST['seller'];
 $listing_id = $_POST['listingId'];
 
 echo $listing_id;
+echo $seller;
 
 $statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . '\'' . $_POST['seller'] . '\'');
 $statement->execute();
