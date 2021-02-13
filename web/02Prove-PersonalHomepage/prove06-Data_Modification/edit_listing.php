@@ -34,7 +34,7 @@ session_start();
         $username = $row['username'];
         $card_sport = $row['sport'];
         $card_condition = $row['card_condition'];
-        $manufacturer = $row['manufacturer'];
+        $card_manufacturer = $row['manufacturer'];
         $athleteFirstName = $row['athlete_first_name'];
         $athleteLastName = $row['athlete_last_name'];
         $description = $row['description'];
@@ -96,6 +96,25 @@ session_start();
         ?>
 
         </br> </br>
+
+        <?php
+        $statement = $db->prepare('SELECT manufacturer_id, manufacturer FROM manufacturers');
+        $statement->execute();
+        echo "Manufacturer:";
+        echo "</br>";
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['manufacturer_id'];
+            $manufacturer = $row['manufacturer'];
+
+            echo "<input type='radio' name='radioManufacturer' ";
+            if($manufacturer == $card_manufacturer) {echo "checked = 'checked'";}
+            echo "id='radioManufacturer$id' value='$id'>";
+            echo "<label for='radioManufacturer$id'>$manufacturer</label><br />";
+
+            echo "\n";
+        }
+        ?>
 
     </form>
 
