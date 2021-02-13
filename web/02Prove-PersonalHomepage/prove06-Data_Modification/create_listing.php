@@ -32,6 +32,10 @@ $db = connectToDB();
         
         </br> </br>
 
+        <?php
+        $statement = $db->prepare('SELECT id, ')
+        ?>
+
         <input type="submit" value="Add Listing">
 
     </form>
