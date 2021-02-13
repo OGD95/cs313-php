@@ -17,16 +17,16 @@ session_start();
 
     <?php require '../header.php'; ?>
 
-    <form action="#">
+    <form action="register_user.php" method="POST">
         <label for="fname">First Name: </label>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" id="firstName" name="firstName"><br>
         <label for="lname">Last Name: </label>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" id="lastName" name="lastName"><br>
         <label for="username">Username: </label>
         <input type="text" id="username" name="username"><br>
         <label for="password">Password: </label>
         <input type="text" id="password" name="password"><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Create Account">
     </form>
 
 </body>
