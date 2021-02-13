@@ -30,7 +30,7 @@ $statement->bindValue(':created_on', $created_on);
 
 $statement->execute();
 
-header("Location: ../prove05-PHP_Data_Access/card_listings_view.php");
+header("Location: ../prove05-PHP_Data_Access/card_listings_view.php?sort_option=username");
 
 die();
 ?>
