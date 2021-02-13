@@ -28,9 +28,9 @@ $statement->bindValue(':firstName', $firstName);
 $statement->bindValue(':lastName', $lastName);
 $statement->bindValue(':created_on', $created_on);
 
-// $statement->execute();
+$statement->execute();
 
-// header("Location: ../prove05-PHP_Data_Access/card_listings_view.php");
+header("Location: ../prove05-PHP_Data_Access/card_listings_view.php");
 
 die();
 ?>
