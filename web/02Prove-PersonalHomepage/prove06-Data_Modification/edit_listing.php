@@ -46,7 +46,7 @@ session_start();
         <label for="athlete_first_name">Athlete's First Name:</label>
         </br>
         <input type="text" id="athlete_first_name" name="athlete_first_name" value="<?php echo $athleteFirstName ?>"></input>
-        
+
         </br> </br>
 
         <lable for="athlete_last_name">Athlete's Last Name:</lable>
@@ -66,7 +66,9 @@ session_start();
             $condition = $row['card_condition'];
 
             echo "<input type='radio' name='radioCondition' ";
-            if($condition == $card_condition) {echo "checked ='checked'";}
+            if ($condition == $card_condition) {
+                echo "checked ='checked'";
+            }
             echo "id='radioCondition$id' value='$id'>";
             echo "<label for='radioCondition$id'>$condition</label><br />";
 
@@ -87,7 +89,9 @@ session_start();
             $sport = $row['sport'];
 
             echo "<input type='radio' name='radioSport' ";
-            if($sport == $card_sport) { echo "checked ='checked'";}
+            if ($sport == $card_sport) {
+                echo "checked ='checked'";
+            }
             echo "id='radioSport$id' value='$id'>";
             echo "<label for='radioSport$id'>$sport</label><br />";
 
@@ -108,13 +112,31 @@ session_start();
             $manufacturer = $row['manufacturer'];
 
             echo "<input type='radio' name='radioManufacturer' ";
-            if($manufacturer == $card_manufacturer) {echo "checked = 'checked'";}
+            if ($manufacturer == $card_manufacturer) {
+                echo "checked = 'checked'";
+            }
             echo "id='radioManufacturer$id' value='$id'>";
             echo "<label for='radioManufacturer$id'>$manufacturer</label><br />";
 
             echo "\n";
         }
         ?>
+
+        </br> </br>
+
+        <label for="seller">Sellers Username:</label>
+        </br>
+        <input type="text" id="seller" name="seller" value="<?php echo $username ?>"></input>
+
+        </br> </br>
+
+        <label for="listingDescription">Listing Description:</label>
+        </br>
+        <textarea id="listingDescription" name="listingDescription" rows="4" cols="50"><?php echo $description ?></textarea>
+
+        </br> </br>
+
+        <input type="submit" value="Add Listing">
 
     </form>
 
