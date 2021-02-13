@@ -49,9 +49,7 @@ session_start();
     '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
     ?>
 
-    <form method="GET" action="../prove06-Data_Modification/edit_listing.php?listing_id=7878">
-        <input type="submit" value="Edit Listing">
-    </form>
-
+    <button onclick="location.href='../prove06-Data_modification/edit_listing.php?listing_id=2'" type="button">
+        Edit Listing</button>
 
 </body>
