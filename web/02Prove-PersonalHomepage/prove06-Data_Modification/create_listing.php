@@ -36,8 +36,7 @@ $db = connectToDB();
         $statement = $db->prepare('SELECT condition_id, card_condition FROM conditions');
         $statement->execute();
         echo "Card's Condition:";
-        echo "\n";
-        echo "\n";
+        echo "</br> </br>";
 
         try {
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
