@@ -31,29 +31,27 @@ session_start();
                         INNER JOIN conditions c ON cl.condition_id = c.condition_id
                         INNER JOIN manufacturers m ON cl.manufacturer_id = m.manufacturer_id
                         WHERE listing_id = ' . $_GET["listing_id"]) as $row) {
-            echo ' Seller: ' . '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['username'] . '<a>';
-            echo '<br/>';
-            echo ' Sport: ' . $row['sport'];
-            echo '<br/>';
-            echo ' Card Condition: ' . $row['card_condition'];
-            echo '<br/>';
-            echo ' Manufacturer: ' . $row['manufacturer'];
-            echo '<br/>';
-            echo ' Athlete Name: ' . $row['athlete_first_name'] . ' ' . $row['athlete_last_name'];
-            echo '<br/>';
-            echo ' Description: ' . $row['description'];
-            echo '<br/>';
+        echo ' Seller: ' . '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['username'] . '<a>';
+        echo '<br/>';
+        echo ' Sport: ' . $row['sport'];
+        echo '<br/>';
+        echo ' Card Condition: ' . $row['card_condition'];
+        echo '<br/>';
+        echo ' Manufacturer: ' . $row['manufacturer'];
+        echo '<br/>';
+        echo ' Athlete Name: ' . $row['athlete_first_name'] . ' ' . $row['athlete_last_name'];
+        echo '<br/>';
+        echo ' Description: ' . $row['description'];
+        echo '<br/>';
 
-            echo '<img src="../images/insertimagehere.jpg" alt="Image Placeholder">';
-        }
-        '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
+        echo '<img src="../images/insertimagehere.jpg" alt="Image Placeholder">';
+    }
+    '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
     ?>
 
-    <form action="../prove06-Data_Modification/edit_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>" method="GET">
+    <form method="GET" action="edit_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>">
         <input type="submit" value="Edit Listing">
     </form>
 
-        
-    
 
 </body>
