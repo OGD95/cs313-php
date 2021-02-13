@@ -10,7 +10,7 @@ $sport_id = $_POST['radioSport'];
 $manufacturer_id = $_POST['radioManufacturer'];
 $description = $_POST['listingDescription'];
 $seller = $_POST['seller'];
-$listing_id = $_POST['listingId'];
+$listing_id = 1;
 
 
 $statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . '\'' . $_POST['seller'] . '\'');
