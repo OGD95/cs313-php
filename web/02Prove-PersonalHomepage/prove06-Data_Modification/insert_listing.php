@@ -35,7 +35,7 @@
 
 // $listing_id = $db->lastInsertId("listing_id_seq");
 
-header("../prove05-PHP_Data_Access/listing_view.php?listing_id=2");
+header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=2");
 
 die();
 ?>
