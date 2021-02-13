@@ -137,7 +137,7 @@ session_start();
         </br> </br>
         <input hidden id="listingId" name="listingId" value="<?php echo $_GET['listing_id'] ?>"></input>
 
-        <input type="submit" value="Edit Listing">
+        <input type="submit" value="Revise Listing">
 
     </form>
 
