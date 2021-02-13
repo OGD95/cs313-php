@@ -12,5 +12,5 @@ $statement = $db->prepare($query);
 
 $statement->bindValue(':listing_id', $listing_id);
 
-// $statement->execute();
+$statement->execute();
 ?>
