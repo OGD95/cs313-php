@@ -50,7 +50,7 @@ session_start();
 
         echo "<form action='../prove06-Data_Modification/edit_listing.php?listing_id=" . $_GET["listing_id"];
         echo "'>
-            <button>Edit Listing</button>
+        <input type='submit' value='Edit Listing'>
         </form>";
 
     ?>
