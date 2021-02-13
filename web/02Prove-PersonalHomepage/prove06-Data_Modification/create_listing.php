@@ -33,7 +33,19 @@ $db = connectToDB();
         </br> </br>
 
         <?php
-        $statement = $db->prepare('SELECT id, ')
+        $statement = $db->prepare('SELECT condition_id, card_condition FROM conditions');
+        $statement->execute();
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            $id = $row['condition_id'];
+            $condition = $row['card_condition'];
+
+            echo "<input type='checkbox' name='chkTopics[]' id='chkTopics$id' value='$id'>";
+            echo "<label for='chkTopics$id'>$name</label><br />";
+
+            echo "\n";
+        }
         ?>
 
         <input type="submit" value="Add Listing">
