@@ -33,7 +33,7 @@ session_start();
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         $username = $row['username'];
         $sport = $row['sport'];
-        $condition = $row['card_condition'];
+        $card_condition = $row['card_condition'];
         $manufacturer = $row['manufacturer'];
         $athleteFirstName = $row['athlete_first_name'];
         $athleteLastName = $row['athlete_last_name'];
@@ -46,6 +46,36 @@ session_start();
         <label for="athlete_first_name">Athlete's First Name:</label>
         </br>
         <input type="text" id="athlete_first_name" name="athlete_first_name" value="<?php echo $athleteFirstName ?>"></input>
+        
+        </br> </br>
+
+        <lable for="athlete_last_name">Athlete's Last Name:</lable>
+        </br>
+        <input type="text" id="athlete_last_name" name="athlete_last_name" value="<?php echo $athleteLastName ?>"></input>
+
+        </br> </br>
+
+        <?php
+        $statement = $db->prepare('SELECT condition_id, card_condition FROM conditions');
+        $statement->execute();
+        echo "Card's Condition:";
+        echo "</br>";
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['condition_id'];
+            $condition = $row['card_condition'];
+
+            echo "<input type='radio' name='radioCondition' ";
+            if($condition == $card_condition) {echo "checked ='checked'";}
+            echo "id='radioCondition$id' value='$id'>";
+            echo "<label for='radioCondition$id'>$condition</label><br />";
+
+            echo "\n";
+        }
+        ?>
+
+        </br> </br>
+
     </form>
 
 
