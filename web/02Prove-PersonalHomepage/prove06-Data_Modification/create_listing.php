@@ -44,7 +44,7 @@ $db = connectToDB();
             $id = $row['condition_id'];
             $condition = $row['card_condition'];
 
-            echo "<input type='radio' name='radioCondition[]' id='radioCondition$id' value='$id'>";
+            echo "<input type='radio' name='radioCondition' id='radioCondition$id' value='$id'>";
             echo "<label for='radioCondition$id'>$condition</label><br />";
 
             echo "\n";
@@ -63,7 +63,7 @@ $db = connectToDB();
             $id = $row['sport_id'];
             $sport = $row['sport'];
 
-            echo "<input type='radio' name='radioSport[]' id='radioSport$id' value='$id'>";
+            echo "<input type='radio' name='radioSport' id='radioSport$id' value='$id'>";
             echo "<label for='radioSport$id'>$sport</label><br />";
 
             echo "\n";
@@ -82,7 +82,7 @@ $db = connectToDB();
             $id = $row['manufacturer_id'];
             $manufacturer = $row['manufacturer'];
 
-            echo "<input type='radio' name='radioManufacturer[]' id='radioManufacturer$id' value='$id'>";
+            echo "<input type='radio' name='radioManufacturer' id='radioManufacturer$id' value='$id'>";
             echo "<label for='radioManufacturer$id'>$manufacturer</label><br />";
 
             echo "\n";
