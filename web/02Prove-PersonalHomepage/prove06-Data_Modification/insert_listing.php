@@ -30,11 +30,12 @@ $statement->bindValue(':athlete_first_name', $athleteFirstName);
 $statement->bindValue(':athlete_last_name', $athleteLastName);
 $statement->bindValue(':description', $description);
 
-$statement->execute();
+//$statement->execute();
 
-$listing_id = $db->lastInsertId("card_listings_listing_id_seq");
+$listing_id = $db->lastInsertId("cardlistings_listingid_seq");
+echo $listing_id;
 
-header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=" . $listing_id);
+//header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=" . $listing_id);
 
 die();
 ?>
