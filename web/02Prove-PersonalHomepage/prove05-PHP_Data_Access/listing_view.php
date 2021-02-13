@@ -50,7 +50,7 @@ session_start();
     ?>
 
     <br/> <br/>
-    <button onclick="location.href='../prove06-Data_modification/edit_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
+    <button onclick="location.href='../prove06-Data_Modification/edit_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
         Edit Listing</button>
 
 </body>
