@@ -92,11 +92,13 @@ $db = connectToDB();
         </br> </br>
 
         <label for="seller">Sellers Username:</label>
+        </br>
         <input type="text" id="seller" name="seller"></input>
 
         </br> </br>
 
         <label for="listingDescription">Listing Description:</label>
+        </br>
         <textarea id="listingDescription" name="listingDescription"></textarea>
 
         </br> </br>
