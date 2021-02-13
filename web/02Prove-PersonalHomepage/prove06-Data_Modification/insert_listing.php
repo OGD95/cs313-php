@@ -10,7 +10,6 @@ $condition_id = $_POST['radioCondition'];
 $sport_id = $_POST['radioSport'];
 $manufacturer_id = $_POST['radioManufacturer'];
 $description = $_POST['listingDescription'];
-$seller = $_POST['seller'];
 
 echo $athleteFirstName;
 echo $athleteLastName;
@@ -18,16 +17,15 @@ echo $condition_id;
 echo $sport_id;
 echo $manufacturer_id;
 echo $description;
-echo $seller;
 
-$statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . $_POST['seller']);
+$statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . '\'' . $_POST['seller'] . '\'');
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     $seller = $row['account_id'];
 }
 
-echo 'SELECT account_id FROM accounts WHERE username=' . $seller;
+echo $seller;
 
 $query = 'INSERT INTO card_listings(account_id, sport_id, condition_id, manufacturer_id, athlete_first_name, athlete_last_name, description) 
           VALUES (:account_id, :sport_id, :condition_id, :manufacturer_id, :athlete_first_name, :athlete_last_name, :description)';
