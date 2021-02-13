@@ -32,7 +32,7 @@ session_start();
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         $username = $row['username'];
-        $sport = $row['sport'];
+        $card_sport = $row['sport'];
         $card_condition = $row['card_condition'];
         $manufacturer = $row['manufacturer'];
         $athleteFirstName = $row['athlete_first_name'];
@@ -69,6 +69,27 @@ session_start();
             if($condition == $card_condition) {echo "checked ='checked'";}
             echo "id='radioCondition$id' value='$id'>";
             echo "<label for='radioCondition$id'>$condition</label><br />";
+
+            echo "\n";
+        }
+        ?>
+
+        </br> </br>
+
+        <?php
+        $statement = $db->prepare('SELECT sport_id, sport FROM sports');
+        $statement->execute();
+        echo "Sport:";
+        echo "</br>";
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['sport_id'];
+            $sport = $row['sport'];
+
+            echo "<input type='radio' name='radioSport' ";
+            if($sport == $card_sport) { echo "checked ='checked'";}
+            echo "id='radioSport$id' value='$id'>";
+            echo "<label for='radioSport$id'>$sport</label><br />";
 
             echo "\n";
         }
