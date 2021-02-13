@@ -36,23 +36,33 @@ $db = connectToDB();
         $statement = $db->prepare('SELECT condition_id, card_condition FROM conditions');
         $statement->execute();
         echo "Card's Condition:";
-        echo "</br> </br>";
+        echo "</br>";
 
-        try {
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-                $id = $row['condition_id'];
-                $condition = $row['card_condition'];
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['condition_id'];
+            $condition = $row['card_condition'];
 
-                echo "<input type='checkbox' name='chkTopics[]' id='chkTopics$id' value='$id'>";
-                echo "<label for='chkTopics$id'>$condition</label><br />";
+            echo "<input type='checkbox' name='chkCondition[]' id='chkCondition$id' value='$id'>";
+            echo "<label for='chkCondition$id'>$condition</label><br />";
 
-                echo "\n";
-            }
-        } catch (PDOException $ex) {
-            // Please be aware that you don't want to output the Exception message in
-            // a production environment
-            echo "Error connecting to DB. Details: $ex";
-            die();
+            echo "\n";
+        }
+        ?>
+        
+        <?php
+        $statement = $db->prepare('SELECT sport_id, sport FROM sports');
+        $statement->execute();
+        echo "Sport:";
+        echo "</br>";
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['sport_id'];
+            $sport = $row['sport'];
+
+            echo "<input type='checkbox' name='chkSport[]' id='chkSport$id' value='$id'>";
+            echo "<label for='chkSport$id'>$sport</label><br />";
+
+            echo "\n";
         }
         ?>
 
