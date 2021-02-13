@@ -99,7 +99,7 @@ $db = connectToDB();
 
         <label for="listingDescription">Listing Description:</label>
         </br>
-        <textarea id="listingDescription" name="listingDescription"></textarea>
+        <textarea id="listingDescription" name="listingDescription" rows="4" cols="50"></textarea>
 
         </br> </br>
 
