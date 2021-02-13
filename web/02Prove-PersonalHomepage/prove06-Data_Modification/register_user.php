@@ -7,7 +7,7 @@ $username = $_POST['username'];
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lasName'];
 $shippingAddress = '7210 Oakberry Way';
-$created_on = new DateTime;
+$created_on = new DateTime();
 
 $query = 'INSERT INTO accounts(password, username, shipping_address, first_name, last_name, created_on)
           VALUES (:password, :username, :shipping_address, :firstName, :lastName, created_on)';
