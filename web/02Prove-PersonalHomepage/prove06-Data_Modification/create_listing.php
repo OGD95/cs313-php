@@ -21,7 +21,7 @@ $db = connectToDB();
     require '../header.php';
     ?>
 
-    <form id="cardListingForm" action="insertListing.php" method="POST">
+    <form id="cardListingForm" action="insert_listing.php" method="POST">
         <label for="athlete_first_name">Athlete's First Name:</label>
         </br>
         <input type="text" id="athlete_first_name" name="athlete_first_name"></input>
