@@ -19,7 +19,7 @@ $statement->bindValue(':lastName', $lastName);
 
 $statement->execute();
 
-header("Location: ../prove05-PHP_Data_Access/card_listings-view");
+header("Location: ../prove05-PHP_Data_Access/card_listings_view.php");
 
 die();
 ?>
