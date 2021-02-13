@@ -33,7 +33,7 @@ $statement->bindValue(':description', $description);
 
 $statement->execute();
 
-$listing_id = $db->lastInsertId("listing_id_seq");
+$listing_id = $db->lastInsertId("card_listings_listing_id_seq");
 
 header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=" . $listing_id);
 
