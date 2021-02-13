@@ -43,10 +43,9 @@ $statement->bindValue(':description', $description);
 
 $statement->execute();
 
-$listing_id = $db->lastInsertId("cardlistings_listingid_seq");
-echo $listing_id;
+// $listing_id = $db->lastInsertId("cardlistings_listingid_seq");
 
-header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=" . $listing_id);
+header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=" . $seller);
 
 die();
 ?>
