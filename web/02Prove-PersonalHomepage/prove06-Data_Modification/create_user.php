@@ -27,6 +27,9 @@ session_start();
         <label for="username">Username: </label>
         <input type="text" id="username" name="username"></input><br>
 
+        <label for="shippingAddress">Shipping Address: </label>
+        <input type="text" id="shippingAddress" name="shippingAddress"></input><br>
+
         <label for="password">Password: </label>
         <input type="password" id="password" name="password"></input><br><br>
 

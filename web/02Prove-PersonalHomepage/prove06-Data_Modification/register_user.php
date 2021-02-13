@@ -6,7 +6,7 @@ $password = $_POST['password'];
 $username = $_POST['username'];
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
-$shippingAddress = '7210 Oakberry Way';
+$shippingAddress = $_POST['shippingAddress'];
 $created_on = date('Y/m/d H:i:s');
 
 echo $password;
