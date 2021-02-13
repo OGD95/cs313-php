@@ -47,13 +47,11 @@ session_start();
             echo '<img src="../images/insertimagehere.jpg" alt="Image Placeholder">';
         }
         '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
-
-        echo "<form action='../prove06-Data_Modification/edit_listing.php?listing_id=" . $_GET["listing_id"];
-        echo "'>
-        <input type='submit' value='Edit Listing'>
-        </form>";
-
     ?>
+
+    <form action="../prove06-Data_Modification/edit_listing.php?listing_id=" . $_GET[listing_id]>
+        <input type="submit" value="Edit Listing">
+    </form>
 
         
     
