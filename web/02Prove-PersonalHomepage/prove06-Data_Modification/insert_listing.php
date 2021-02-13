@@ -10,6 +10,7 @@ $condition_id = $_POST['radioCondition'];
 $sport_id = $_POST['radioSport'];
 $manufacturer_id = $_POST['radioManufacturer'];
 $description = $_POST['listingDescription'];
+$seller = $_POST['seller'];
 
 echo $athleteFirstName;
 echo $athleteLastName;
@@ -17,7 +18,7 @@ echo $condition_id;
 echo $sport_id;
 echo $manufacturer_id;
 echo $description;
-echo 'SELECT account_id FROM accounts WHERE username=' . $_POST['seller'];
+echo $seller;
 
 $statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . $_POST['seller']);
 $statement->execute();
