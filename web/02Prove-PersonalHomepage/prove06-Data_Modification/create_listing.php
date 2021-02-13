@@ -86,6 +86,8 @@ $db = connectToDB();
         <label for="seller">Sellers Username:</label>
         <input type="text" id="seller" name="seller"></input>
 
+        </br> </br>
+
         <label for="listingDescription">Listing Description:</label>
         <textarea id="listingDescription" name="listingDescription"></textarea>
 
