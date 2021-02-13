@@ -45,7 +45,7 @@ session_start();
     <form id="editListingForm" action="change_listing.php" method="POST">
         <label for="athlete_first_name">Athlete's First Name:</label>
         </br>
-        <input type="text" id="athlete_first_name" name="athlete_first_name"><?php echo $athleteFirstName ?></input>
+        <input type="text" id="athlete_first_name" name="athlete_first_name" value="<?php echo $athleteFirstName ?>"></input>
     </form>
 
 
