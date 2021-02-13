@@ -135,7 +135,7 @@ session_start();
         <textarea id="listingDescription" name="listingDescription" rows="4" cols="50"><?php echo $description ?></textarea>
 
         </br> </br>
-        <input hidden id="listingId" name="listingId" value="<?php $_GET['listing_id'] ?>"></input
+        <input hidden id="listingId" name="listingId" value="<?php $_GET['listing_id'] ?>"></input>
 
         <input type="submit" value="Edit Listing">
 
