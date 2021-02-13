@@ -42,8 +42,8 @@ $db = connectToDB();
             $id = $row['condition_id'];
             $condition = $row['card_condition'];
 
-            echo "<input type='checkbox' name='chkCondition[]' id='chkCondition$id' value='$id'>";
-            echo "<label for='chkCondition$id'>$condition</label><br />";
+            echo "<input type='radio' name='radioCondition[]' id='radioCondition$id' value='$id'>";
+            echo "<label for='radioCondition$id'>$condition</label><br />";
 
             echo "\n";
         }
@@ -59,8 +59,8 @@ $db = connectToDB();
             $id = $row['sport_id'];
             $sport = $row['sport'];
 
-            echo "<input type='checkbox' name='chkSport[]' id='chkSport$id' value='$id'>";
-            echo "<label for='chkSport$id'>$sport</label><br />";
+            echo "<input type='radio' name='radioSport[]' id='radioSport$id' value='$id'>";
+            echo "<label for='radioSport$id'>$sport</label><br />";
 
             echo "\n";
         }
@@ -76,11 +76,15 @@ $db = connectToDB();
             $id = $row['manufacturer_id'];
             $manufacturer = $row['manufacturer'];
 
-            echo "<input type='checkbox' name='chkManufacturer[]' id='chkManufacturer$id' value='$id'>";
-            echo "<label for='chkManufacturer$id'>$manufacturer</label><br />";
+            echo "<input type='radio' name='radioManufacturer[]' id='radioManufacturer$id' value='$id'>";
+            echo "<label for='radioManufacturer$id'>$manufacturer</label><br />";
 
             echo "\n";
         }
+        ?>
+
+        <?php
+
         ?>
 
         <input type="submit" value="Add Listing">
