@@ -10,8 +10,9 @@ $sport_id = $_POST['radioSport'];
 $manufacturer_id = $_POST['radioManufacturer'];
 $description = $_POST['listingDescription'];
 $seller = $_POST['seller'];
-$listing_id = 1;
+$listing_id = $_POST['listingId'];
 
+echo $listing_id;
 
 $statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . '\'' . $_POST['seller'] . '\'');
 $statement->execute();
@@ -35,10 +36,10 @@ $statement->bindValue(':athleteLastName', $athleteLastName);
 $statement->bindValue(':description', $description);
 $statement->bindValue(':listingId', $listing_id);
 
-$statement->execute();
+//$statement->execute();
 
 
 
-header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=$listing_id");
+//header("Location: ../prove05-PHP_Data_Access/listing_view.php?listing_id=$listing_id");
 
 ?>
