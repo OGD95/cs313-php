@@ -7,7 +7,7 @@ $username = $_POST['username'];
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $shippingAddress = '7210 Oakberry Way';
-$created_on = new DateTime();
+$created_on = time();
 
 echo $password;
 echo $username;
