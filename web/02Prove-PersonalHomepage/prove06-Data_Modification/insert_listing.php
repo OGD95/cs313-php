@@ -10,6 +10,7 @@ $condition_id = $_POST['radioCondition'];
 $sport_id = $_POST['radioSport'];
 $manufacturer_id = $_POST['radioManufacturer'];
 $description = $_POST['listingDescription'];
+$seller = 'hello';
 
 echo $athleteFirstName;
 echo $athleteLastName;
