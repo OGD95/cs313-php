@@ -9,6 +9,13 @@ $lastName = $_POST['lastName'];
 $shippingAddress = '7210 Oakberry Way';
 $created_on = new DateTime();
 
+echo $password;
+echo $username;
+echo $firstName;
+echo $lastName;
+echo $shippingAddress;
+echo $created_on;
+
 $query = 'INSERT INTO accounts(password, username, shipping_address, first_name, last_name, created_on)
           VALUES (:password, :username, :shipping_address, :firstName, :lastName, :created_on)';
 
@@ -21,9 +28,9 @@ $statement->bindValue(':firstName', $firstName);
 $statement->bindValue(':lastName', $lastName);
 $statement->bindValue(':created_on', $created_on);
 
-$statement->execute();
+// $statement->execute();
 
-header("Location: ../prove05-PHP_Data_Access/card_listings_view.php");
+// header("Location: ../prove05-PHP_Data_Access/card_listings_view.php");
 
 die();
 ?>
