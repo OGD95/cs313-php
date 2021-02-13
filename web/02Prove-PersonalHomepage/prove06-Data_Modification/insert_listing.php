@@ -19,10 +19,10 @@ echo $sport_id;
 echo $manufacturer_id;
 echo $description;
 
-$statement = $db->prepare("SELECT account_id FROM accounts WHERE username=" + $_POST['seller']);
+$statement = $db->prepare('SELECT account_id FROM accounts WHERE username=' . $_POST['seller']);
 $statement->execute();
 
-while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+for ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     $seller = $row['account_id'];
 }
 
