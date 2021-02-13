@@ -42,7 +42,7 @@ $db = connectToDB();
                 $condition = $row['card_condition'];
 
                 echo "<input type='checkbox' name='chkTopics[]' id='chkTopics$id' value='$id'>";
-                echo "<label for='chkTopics$id'>$name</label><br />";
+                echo "<label for='chkTopics$id'>$condition</label><br />";
 
                 echo "\n";
             }
