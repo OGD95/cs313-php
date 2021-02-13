@@ -66,6 +66,23 @@ $db = connectToDB();
         }
         ?>
 
+        <?php
+        $statement = $db->prepare('SELECT manufacturer_id, manufacturer FROM manufacturers');
+        $statement->execute();
+        echo "Manufacturer:";
+        echo "</br>";
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['manufacturer_id'];
+            $manufacturer = $row['manufacturer'];
+
+            echo "<input type='checkbox' name='chkManufacturer[]' id='chkManufacturer$id' value='$id'>";
+            echo "<label for='chkManufacturer$id'>$manufacturer</label><br />";
+
+            echo "\n";
+        }
+        ?>
+
         <input type="submit" value="Add Listing">
 
     </form>
