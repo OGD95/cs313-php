@@ -5,7 +5,7 @@ $db = connectToDB();
 $password = $_POST['password'];
 $username = $_POST['username'];
 $firstName = $_POST['firstName'];
-$lastName = $_POST['lasName'];
+$lastName = $_POST['lastName'];
 $shippingAddress = '7210 Oakberry Way';
 $created_on = new DateTime();
 
