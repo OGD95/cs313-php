@@ -21,7 +21,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 }
 
 $query = 'UPDATE card_listings
-          SET account_id=:seller, sport_id=:sport_id, condition_id=:condition_id, manufacturer_id=:manufacturer_id, athlete_first_name=\':athleteFirstName\', athlete_last_name=\':athleteLastName\', description=\':description\'
+          SET account_id=:seller, sport_id=:sport_id, condition_id=:condition_id, manufacturer_id=:manufacturer_id, athlete_first_name=:athleteFirstName, athlete_last_name=:athleteLastName, description=:description
           WHERE listing_id=:listingId';
 
 $statement = $db->prepare($query);
