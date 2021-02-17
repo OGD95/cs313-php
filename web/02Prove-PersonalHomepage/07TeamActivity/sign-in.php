@@ -10,21 +10,21 @@ session_start();
     <script src="../functions.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Creation</title>
+    <title>Login</title>
 </head>
 
 <body>
 
     <?php require '../header.php'; ?>
 
-    <form action="add_user.php" method="POST">
+    <form action="login.php" method="POST">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username"></input><br>
 
         <label for="password">Password: </label>
         <input type="password" id="password" name="password"></input><br><br>
 
-        <input type="submit" value="Create Account">
+        <input type="submit" value="Sign-in">
     </form>
 
 </body>
