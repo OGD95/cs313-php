@@ -17,7 +17,7 @@ session_start();
 
     <?php 
     require '../header.php'; 
-    if($_SESSION['current_user_username'].isset()){
+    if(isset($_SESSION['current_user_username'])){
         echo '<h1>Welcome ' . $_SESSION['current_user_username'] . '!!!</h1>';
     } else{
         header('Location: sign-in.php');
