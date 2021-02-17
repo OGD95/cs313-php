@@ -17,7 +17,7 @@ session_start();
 
     <?php require '../header.php'; ?>
 
-    <form action="login.php" method="POST">
+    <form action="verify_info.php" method="POST">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username"></input><br>
 
