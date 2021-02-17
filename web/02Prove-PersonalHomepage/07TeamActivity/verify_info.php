@@ -16,6 +16,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
 if(password_verify($password, $hashedPassword)){
     $_SESSION['current_user_id'] = $accountId;
+    $_SESSION['current_user_username'] = $username;
     header('Location: welcome.php');
 }else{
     header('Location: sign-in.php');
