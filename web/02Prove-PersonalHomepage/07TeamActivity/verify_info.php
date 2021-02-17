@@ -20,6 +20,7 @@ if(password_verify($password, $hashedPassword)){
     header('Location: welcome.php');
 }else{
     header('Location: sign-in.php');
+    die();
 }
 
 

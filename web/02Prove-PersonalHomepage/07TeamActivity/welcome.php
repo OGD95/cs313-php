@@ -15,10 +15,15 @@ session_start();
 
 <body>
 
-    <?php require '../header.php'; ?>
-
-    <h1>Welcome <?php echo $_SESSION['current_user_username'] ?> !!!</h1>
-    <?php echo $_SESSION['current_user_id'] ?>
+    <?php 
+    require '../header.php'; 
+    if($_SESSION['current_user_username'].isset()){
+        echo '<h1>Welcome ' . $_SESSION['current_user_username'] . '!!!</h1>';
+    } else{
+        header('Location: sign-in.php');
+        die();
+    }
+    ?>
 
 </body>
 
