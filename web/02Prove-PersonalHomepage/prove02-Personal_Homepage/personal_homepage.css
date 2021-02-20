@@ -96,3 +96,15 @@
 #logoutButton{
     float: right;
 }
+
+#logoutLink:hover{
+    color: black;
+}
+
+#logoutLink:active{
+    color:black;
+}
+
+#logoutLink:visited{
+    color:black;
+}
