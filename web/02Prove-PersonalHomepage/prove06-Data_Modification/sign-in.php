@@ -29,6 +29,6 @@ session_start();
         <input type="submit" value="Sign-in">
     </form>
 
-    <button><a href="sign-up.php">Create Account</a></button>
+    <button onclick="location.href = 'sign-up.php';">Create Account</button>
 
 </body>
