@@ -23,7 +23,7 @@
         <a href="../../02Prove-PersonalHomepage/prove06-Data_Modification/create_listing.php">Prove 06 - PHP Data Modification</a>
         </br>
         </br>
-        <a href="../../02Prove-PersonalHomepage/07TeamActivity/welcome.php">Week 07 Team Activity</a>
+        <a href="../../02Prove-PersonalHomepage/prove06-Data_Modification/welcome.php">Complete Project</a>
     </div>
 
 </body>
