@@ -1,6 +1,7 @@
 <?php
 require '../connection.php';
 $db = connectToDB();
+session_start();
 
 
 $athleteFirstName = $_POST['athlete_first_name'];
