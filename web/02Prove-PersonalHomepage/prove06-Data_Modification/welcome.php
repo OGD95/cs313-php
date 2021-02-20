@@ -15,17 +15,19 @@ session_start();
 
 <body>
 
-    <?php 
-    require '../header.php'; 
-    if(isset($_SESSION['current_user_username'])){
+    <?php
+    require '../header.php';
+    if (isset($_SESSION['current_user_username'])) {
         echo '<h1 id=greetingMessage>Welcome ' . $_SESSION['current_user_username'] . '!!!</h1>';
-    } else{
+    } else {
         header('Location: sign-in.php');
         die();
     }
     ?>
 
-    <button id="greetingMessage" onclick="location.href = '../prove05-PHP_Data_Access/card_listings_view.php?sort_option=username';">View Available Listings</button>
+    <div id="greetingMessage">
+        <button onclick="location.href = '../prove05-PHP_Data_Access/card_listings_view.php?sort_option=username';">View Available Listings</button>
+    </div>
 
 </body>
 
