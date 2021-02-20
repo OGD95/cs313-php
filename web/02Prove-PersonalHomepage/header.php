@@ -1,16 +1,11 @@
-<?php 
-session_start();
-if(!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_username']) && $_SERVER['REQUEST_URI'] != 'sign-in.php')
-{
-    header("Location: ../prove06-Data_Modification/sign-in.php");
-    die();
-}
-?>
+
 <body>
     <div class="header">
         <?php echo "<h2>Dylan's CS 313 Homepage</h2>" ?>
         <hr>
     </div>
+
+    <?php echo $_SERVER['REQUEST_URI']; ?>
 
     <div class="homepage_menu">
         <?php echo '<a id="localLink" href="../prove02-Personal_Homepage/personal_homepage.php" title="Go to Homepage">Homepage</a>' ?>
