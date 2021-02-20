@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_username']))
 {
-    header("Location: prove06-Data_Modification/sign-in.php");
+    header("Location: ../prove06-Data_Modification/sign-in.php");
 }
 ?>
 <body>
