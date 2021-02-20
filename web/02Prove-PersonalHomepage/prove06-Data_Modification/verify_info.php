@@ -8,7 +8,7 @@ $username = $_POST['username'];
 
 echo $password;
 
-$statement = $db->prepare('SELECT password, account_id FROM accounts WHERE username =' . $username);
+$statement = $db->prepare('SELECT password, account_id FROM accounts WHERE username =' . '\'' . $username . '\'');
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
