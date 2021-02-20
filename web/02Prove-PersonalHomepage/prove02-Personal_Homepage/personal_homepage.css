@@ -94,5 +94,5 @@
 }
 
 #logoutButton{
-    align-self: flex-end;
+    float: right;
 }
