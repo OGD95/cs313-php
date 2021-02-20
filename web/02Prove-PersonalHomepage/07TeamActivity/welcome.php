@@ -18,7 +18,7 @@ session_start();
     <?php 
     require '../header.php'; 
     if(isset($_SESSION['current_user_username'])){
-        echo '<h1>Welcome ' . $_SESSION['current_user_username'] . '!!!</h1>';
+        echo '<h1 id=greetingMessage>Welcome ' . $_SESSION['current_user_username'] . '!!!</h1>';
     } else{
         header('Location: sign-in.php');
         die();

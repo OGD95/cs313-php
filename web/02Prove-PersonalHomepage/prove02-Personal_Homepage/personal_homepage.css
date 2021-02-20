@@ -88,3 +88,7 @@
     color: black;
     text-decoration: underline;
 }
+
+#greetingMessage{
+    text-align: center;
+}
