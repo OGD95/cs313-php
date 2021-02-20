@@ -1,7 +1,6 @@
 <body>
-    <button onclick="unset($_SESSION['current_user_id'], $_SESSION['current_user_username'])"></button>
-
     <div class="header">
+        <button onclick="unset($_SESSION['current_user_id'], $_SESSION['current_user_username'])">Logout</button>
         <?php echo "<h2>Dylan's CS 313 Homepage</h2>" ?>
         <hr>
     </div>
