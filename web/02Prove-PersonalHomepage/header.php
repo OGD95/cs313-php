@@ -9,7 +9,7 @@ if(!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_userna
 <body>
     <?php 
     if(isset($_SESSION['current_user_id']) && isset($_SESSION['current_user_username'])){
-        echo '<a href="../02Prove-PersonalHomepage/prove06-Data_Modification/signout.php">Logout</a>';
+        echo '<a href="../prove06-Data_Modification/signout.php">Logout</a>';
     }
     ?>
     
