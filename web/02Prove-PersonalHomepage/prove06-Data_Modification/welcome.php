@@ -25,7 +25,7 @@ session_start();
     }
     ?>
 
-    <button onclick="location.href = '../prove05-PHP_Data_Access/card_listings_view.php?sort_option=username';">View Available Listings</button>
+    <button id="greetingMessage" onclick="location.href = '../prove05-PHP_Data_Access/card_listings_view.php?sort_option=username';">View Available Listings</button>
 
 </body>
 
