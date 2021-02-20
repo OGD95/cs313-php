@@ -57,12 +57,5 @@ session_start();
         echo '<button onclick="location.href=\'../prove06-Data_Modification/edit_listing.php?listing_id=' . $_GET['listing_id'] . '\'' . '" type="button">Edit Listing</button>';
         echo '<button onclick="location.href=\'../prove06-Data_Modification/delete_listing.php?listing_id=' . $_GET['listing_id'] . '\'' . '" type="button">Delete Listing</button>';
     }
-    
-    ?>
-    <button onclick="location.href='../prove06-Data_Modification/edit_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
-        Edit Listing</button>
-
-    <button onclick="location.href='../prove06-Data_Modification/delete_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
-        Delete Listing</button>
 
 </body>
