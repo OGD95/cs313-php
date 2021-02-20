@@ -20,10 +20,10 @@ session_start();
     <h1 id="greetingMessage">Sign-in</h1>
 
     <form action="verify_info.php" method="POST">
-        <label for="username">Username: </label>
+        <label for="username">Username: </label><br>
         <input type="text" id="username" name="username"></input><br>
 
-        <label for="password">Password: </label>
+        <label for="password">Password: </label><br>
         <input type="password" id="password" name="password"></input><br><br>
 
         <input type="submit" value="Sign-in">

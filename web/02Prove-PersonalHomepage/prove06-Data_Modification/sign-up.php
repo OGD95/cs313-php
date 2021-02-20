@@ -20,19 +20,19 @@ session_start();
     <h1 id="greetingMessage">Create Account Here</h1>
 
     <form action="register_user.php" method="POST">
-        <label for="fname">First Name: </label>
+        <label for="fname">First Name: </label><br>
         <input type="text" id="firstName" name="firstName"></input><br>
 
-        <label for="lname">Last Name: </label>
+        <label for="lname">Last Name: </label><br>
         <input type="text" id="lastName" name="lastName"></input><br>
 
-        <label for="username">Username: </label>
+        <label for="username">Username: </label><br>
         <input type="text" id="username" name="username"></input><br>
 
-        <label for="shippingAddress">Shipping Address: </label>
+        <label for="shippingAddress">Shipping Address: </label><br>
         <input type="text" id="shippingAddress" name="shippingAddress"></input><br>
 
-        <label for="password">Password: </label>
+        <label for="password">Password: </label><br>
         <input type="password" id="password" name="password"></input><br><br>
 
         <input type="submit" value="Create Account">
