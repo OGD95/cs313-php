@@ -15,6 +15,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     $hashedPassword = $row['password'];
     $accountId = $row['account_id'];
 }
+echo $hashedPassword;
 
 // if(password_verify($password, $hashedPassword)){
 //     $_SESSION['current_user_id'] = $accountId;
