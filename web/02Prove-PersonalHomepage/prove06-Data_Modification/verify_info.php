@@ -6,7 +6,7 @@ $db = connectToDB();
 $password = $_POST['password'];
 $username = $_POST['username'];
 
-$statement = $db->prepare('SELECT password, accountid FROM team_activity_accounts WHERE username =' . '\'' . $username . '\'');
+$statement = $db->prepare('SELECT password, accountid FROM accounts WHERE username =' . '\'' . $username . '\'');
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {

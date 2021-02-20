@@ -17,9 +17,18 @@ session_start();
 
     <?php require '../header.php'; ?>
 
-    <form action="add_user.php" method="POST">
+    <form action="register_user.php" method="POST">
+    <label for="fname">First Name: </label>
+        <input type="text" id="firstName" name="firstName"></input><br>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lastName" name="lastName"></input><br>
+
         <label for="username">Username: </label>
         <input type="text" id="username" name="username"></input><br>
+
+        <label for="shippingAddress">Shipping Address: </label>
+        <input type="text" id="shippingAddress" name="shippingAddress"></input><br>
 
         <label for="password">Password: </label>
         <input type="password" id="password" name="password"></input><br><br>
