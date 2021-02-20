@@ -17,6 +17,8 @@ session_start();
 
     <?php require '../header.php'; ?>
 
+    <h1 id="greetingMessage">Create Account Here</h1>
+
     <form action="register_user.php" method="POST">
         <label for="fname">First Name: </label>
         <input type="text" id="firstName" name="firstName"></input><br>
