@@ -92,3 +92,7 @@
 #greetingMessage{
     text-align: center;
 }
+
+#logoutButton{
+    text-align: right;
+}

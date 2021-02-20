@@ -7,16 +7,11 @@ if (!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_usern
 ?>
 
 <body>
-    <?php
-    if (isset($_SESSION['current_user_id']) && isset($_SESSION['current_user_username'])) {
-        echo '<a href="../prove06-Data_Modification/signout.php">Logout</a>';
-    }
-    ?>
 
     <div class="header">
         <?php
         if (isset($_SESSION['current_user_id']) && isset($_SESSION['current_user_username'])) {
-            echo '<a href="../prove06-Data_Modification/signout.php">Logout</a>';
+            echo '<a id="logoutButton" href="../prove06-Data_Modification/signout.php">Logout</a>';
         }
         ?>
         <?php echo "<h2>Dylan's CS 313 Homepage</h2>" ?>
