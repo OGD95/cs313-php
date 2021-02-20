@@ -18,7 +18,7 @@ session_start();
     <?php require '../header.php'; ?>
 
     <form action="register_user.php" method="POST">
-    <label for="fname">First Name: </label>
+        <label for="fname">First Name: </label>
         <input type="text" id="firstName" name="firstName"></input><br>
 
         <label for="lname">Last Name: </label>

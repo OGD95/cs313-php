@@ -30,9 +30,9 @@ $statement->bindValue(':firstName', $firstName);
 $statement->bindValue(':lastName', $lastName);
 $statement->bindValue(':created_on', $created_on);
 
-// $statement->execute();
+$statement->execute();
 
-// header("Location: sign-in.php");
+header("Location: sign-in.php");
 
-// die();
+die();
 ?>
