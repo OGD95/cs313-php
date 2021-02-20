@@ -5,7 +5,7 @@
         <hr>
     </div>
 
-    <?php echo $_SERVER['REQUEST_URI']; ?>
+    <?php echo substr($_SERVER['REQUEST_URI'], -10); ?>
 
     <div class="homepage_menu">
         <?php echo '<a id="localLink" href="../prove02-Personal_Homepage/personal_homepage.php" title="Go to Homepage">Homepage</a>' ?>
