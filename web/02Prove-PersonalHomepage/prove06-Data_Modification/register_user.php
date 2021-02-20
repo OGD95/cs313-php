@@ -9,7 +9,7 @@ $lastName = $_POST['lastName'];
 $shippingAddress = $_POST['shippingAddress'];
 $created_on = date('Y/m/d H:i:s');
 
-$password = password_hash($password, PASSWORD_DEFAULT); 
+// $password = password_hash($password, PASSWORD_DEFAULT); 
 
 $query = 'INSERT INTO accounts(password, username, shipping_address, first_name, last_name, created_on)
           VALUES (:password, :username, :shipping_address, :first_Name, :last_Name, :created_on)';
