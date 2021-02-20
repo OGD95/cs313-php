@@ -40,6 +40,8 @@ session_start();
             <input type="submit" value="Sort">
         </form>
 
+        <button onclick="location.href = '../prove06-Data_Modification/create_listing.php';">Create New Listing</button>
+
         <?php
 
         $db = connectToDB();
