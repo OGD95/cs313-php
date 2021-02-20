@@ -45,15 +45,24 @@ session_start();
         echo '<br/>';
 
         echo '<img src="../images/insertimagehere.jpg" alt="Image Placeholder">';
+
+        $account_id = $row['account_id'];
     }
     '<a href="user_info.php?user=' . $row['account_id'] . '">' . $row['last_name'] . ', ' . $row['first_name'] . '<a>';
     ?>
 
-    <br/> <br/>
+    <br /> <br />
+    <?php 
+    if($_SESSION['current_user_id'] == $account_id){
+        echo '<button onclick="location.href=\'../prove06-Data_Modification/edit_listing.php?listing_id=' . $_GET['listing_id'] . '\'' . '" type="button">Edit Listing</button>';
+        echo '<button onclick="location.href=\'../prove06-Data_Modification/delete_listing.php?listing_id=' . $_GET['listing_id'] . '\'' . '" type="button">Delete Listing</button>';
+    }
+    
+    ?>
     <button onclick="location.href='../prove06-Data_Modification/edit_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
         Edit Listing</button>
 
-        <button onclick="location.href='../prove06-Data_Modification/delete_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
+    <button onclick="location.href='../prove06-Data_Modification/delete_listing.php?listing_id=<?php echo $_GET['listing_id'] ?>'" type="button">
         Delete Listing</button>
 
 </body>
