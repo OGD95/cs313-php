@@ -17,7 +17,7 @@ session_start();
 
     <?php require '../header.php'; ?>
 
-    <h1 id="greetingMessage">Sign-in to Navigate Site</h1>
+    <h1 id="greetingMessage">Sign-in to View Listings</h1>
 
     <form action="verify_info.php" method="POST">
         <label for="username">Username: </label><br>
