@@ -1,4 +1,5 @@
 <body>
+    <button onclick="unset($_SESSION['current_user_id'], $_SESSION['current_user_username'])"></button>
 
     <div class="header">
         <?php echo "<h2>Dylan's CS 313 Homepage</h2>" ?>
@@ -10,5 +11,4 @@
         <?php echo "|" ?>
         <?php echo '<a id="localLink" href="../prove02-Personal_Homepage/assignments.php" title="Go to Assignments Page">Assignments</a>' ?>
     </div>
-
 </body>

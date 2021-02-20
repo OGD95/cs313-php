@@ -15,6 +15,8 @@ session_start();
 
 <body>
 
+
+
     <?php
     require '../header.php';
     if (isset($_SESSION['current_user_username'])) {
