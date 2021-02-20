@@ -13,6 +13,7 @@ $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     $hashedPassword = $row['password'];
+    echo $hashedPassword;
     $accountId = $row['account_id'];
 }
 echo $hashedPassword;
