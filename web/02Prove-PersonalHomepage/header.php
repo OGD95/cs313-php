@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if(!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_username']))
+if(!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_username']) && $_SERVER['REQUEST_URI'] != 'sign-in.php')
 {
     header("Location: ../prove06-Data_Modification/sign-in.php");
     die();
