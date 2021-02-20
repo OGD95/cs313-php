@@ -6,6 +6,7 @@ $db = connectToDB();
 $password = $_POST['password'];
 $username = $_POST['username'];
 
+$username = htmlspecialchars($username);
 
 $statement = $db->prepare('SELECT password, account_id FROM accounts WHERE username =' . '\'' . $username . '\'');
 $statement->execute();

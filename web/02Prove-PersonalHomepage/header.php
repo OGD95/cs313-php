@@ -7,6 +7,12 @@ if(!isset($_SESSION['current_user_id']) && !isset($_SESSION['current_user_userna
 }
 ?>
 <body>
+    <?php 
+    if(isset($_SESSION['current_user_id']) && isset($_SESSION['current_user_username'])){
+        echo '<a href="../02Prove-PersonalHomepage/prove06-Data_Modification/signout.php">Logout</a>';
+    }
+    ?>
+    
     <div class="header">
         <?php echo "<h2>Dylan's CS 313 Homepage</h2>" ?>
         <hr>
